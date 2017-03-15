@@ -140,20 +140,6 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 
 
-###  http://w3id.org/ocds/ns#awardItems
-
-:awardItems rdf:type owl:ObjectProperty ;
-            
-            rdfs:label "Items Awarded"@en ;
-            
-            rdfs:comment "The goods and services awarded in this award, broken into line items wherever possible. Items should not be duplicated, but the quantity specified instead."@en ;
-            
-            rdfs:domain :Award ;
-            
-            rdfs:range :Item .
-
-
-
 ###  http://w3id.org/ocds/ns#awardPeriod
 
 :awardPeriod rdf:type owl:FunctionalProperty ,
@@ -406,6 +392,20 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:domain :Contract ;
                
                rdfs:range :Item .
+
+
+
+###  http://w3id.org/ocds/ns#contractLots
+
+:contractLots rdf:type owl:ObjectProperty ;
+              
+              rdfs:label "Contract lots"@en ;
+              
+              rdfs:comment "List of lots associated with the contract"@en ;
+              
+              rdfs:domain :Contract ;
+              
+              rdfs:range :Lot .
 
 
 
@@ -793,7 +793,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            
            rdfs:comment "The suppliers awarded this award. If different suppliers have been awarded different items of values, these should be split into separate award blocks."@en ;
            
-           rdfs:domain :Award ;
+           rdfs:domain :Contract ;
            
            rdfs:range :Organization .
 
@@ -868,6 +868,20 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:range :Item ;
              
              rdfs:domain :Tender .
+
+
+
+###  http://w3id.org/ocds/ns#tenderLots
+
+:tenderLots rdf:type owl:ObjectProperty ;
+            
+            rdfs:label "Tender lots"@en ;
+            
+            rdfs:comment "List of lots associated with the tender"@en ;
+            
+            rdfs:range :Lot ;
+            
+            rdfs:domain :Tender .
 
 
 
