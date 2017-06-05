@@ -1,0 +1,61 @@
+{"@context": {
+
+   "Award" : {
+      "@id" : "http://w3id.org/ocds/ns##Award"
+    },
+        
+    "id" : {
+      "@id" : "http://w3id.org/ocds/ns##awardID",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://w3id.org/ocds/ns##awardTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+
+    "status" : {
+      "@id" : "http://w3id.org/ocds/ns##awardStatus",
+      "@type" : "@id"
+    },
+
+    "date" : {
+      "@id" : "http://w3id.org/ocds/ns##awardDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+
+     "value" : {
+      "@id" : "http://w3id.org/ocds/ns##awardValue",
+      "@type" : "@id"
+    },
+
+    "suppliers" : {
+      "@id" : "http://w3id.org/ocds/ns##suppliers",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://w3id.org/ocds/ns##awardDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "amendment" : {
+      "@id" : "http://w3id.org/ocds/ns##awardAmendment",
+      "@type" : "@id"
+    },
+     "documents" : {
+      "@id" : "http://w3id.org/ocds/ns##awardDocuments",
+      "@type" : "@id"
+    },
+
+     "url" : {
+      "@id" : "http://w3id.org/ocds/ns##awardURL",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    }
+
+
+  
+
+
+
+
+
+      }
+  }
