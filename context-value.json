@@ -1,0 +1,14 @@
+{"@context": {
+        "Value": {
+          "@id": "http://w3id.org/ocds/ns##Value"
+        },
+        "currency": {
+          "@id": "http://w3id.org/ocds/ns##currency",
+          "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "amount": {
+          "@id": "http://w3id.org/ocds/ns##valueAmount",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+  }

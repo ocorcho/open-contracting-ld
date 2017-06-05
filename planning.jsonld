@@ -1,0 +1,17 @@
+{
+  "@context": "http://girolabs.com.py/ocds/context-planning.json",
+  "@type": "Planning",
+  "@id": "https://www.contrataciones.gov.py/datos/id/planificaciones/193399-adquisicion-scanner",
+  "budget": {
+    "@context": "http://girolabs.com.py/ocds/context-budget.json",
+    "@type": "Budget",
+    "description": "Adquisición de Scanner",
+    "amount": {
+      "@context": "http://girolabs.com.py/ocds/context-value.json",
+      "@type": "Value",
+      "amount": 12000000,
+      "currency": "PYG"
+    }
+  },
+  "url": "https://www.contrataciones.gov.py/datos/id/planificaciones/193399-adquisicion-scanner"
+}

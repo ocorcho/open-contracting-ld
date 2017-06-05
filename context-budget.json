@@ -1,0 +1,18 @@
+{
+
+  "@context": {
+    
+    "Budget": {
+      "@id": "http://w3id.org/ocds/ns##Budget"
+    },
+    "amount": {
+      "@id": "http://w3id.org/ocds/ns##budgetAmount",
+      "@type": "@id"
+    },
+    "description": {
+      "@id": "http://w3id.org/ocds/ns##budgetDescription",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+
+}
