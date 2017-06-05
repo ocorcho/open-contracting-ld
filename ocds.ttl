@@ -712,12 +712,9 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://w3id.org/ocds/ns#budgetDescription
-:budgetDescription rdf:type owl:DatatypeProperty ,
-                            owl:FunctionalProperty ;
+:budgetDescription rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Budget ;
-                   rdfs:range xsd:string ;
-                   rdfs:comment "A short free text description of the budget source. May be used to provide the title of the budget line, or the programme used to fund this project."@en ;
-                   rdfs:label "Budget Description"@en .
+                   rdfs:range xsd:string .
 
 
 ###  http://w3id.org/ocds/ns#budgetId
