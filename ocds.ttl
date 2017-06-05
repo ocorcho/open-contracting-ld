@@ -711,6 +711,12 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "Award title"@en .
 
 
+###  http://w3id.org/ocds/ns#awardURL
+:awardURL rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Award ;
+          rdfs:range xsd:anyURI .
+
+
 ###  http://w3id.org/ocds/ns#budgetDescription
 :budgetDescription rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Budget ;
