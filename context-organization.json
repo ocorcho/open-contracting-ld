@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "Organization": {
+      "@id": "http://w3id.org/ocds/ns##Organization"
+    },
+    "name": {
+      "@id": "http://w3id.org/ocds/ns##organizationName",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "id": {
+      "@id": "http://w3id.org/ocds/ns##identifier",
+      "@type": "@id"
+    },
+    "contactPoint" : {
+      "@id" : "http://w3id.org/ocds/ns##contactPoint",
+      "@type" : "@id"
+    }
+  }
+}

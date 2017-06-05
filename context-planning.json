@@ -1,15 +1,15 @@
 {"@context": {
-        "planning" : {
+        "Planning" : {
 		      "@id" : "http://w3id.org/ocds/ns##Planning"
 		    },
-		    "budget" : {
-		      "@id" : "http://w3id.org/ocds/ns##budget",
-		      "@type" : "@id"
-		    },
-		    "url" : {
-		      "@id" : "http://w3id.org/ocds/ns##planningUrl",
-		      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
-		    }
+		"budget" : {
+		  "@id" : "http://w3id.org/ocds/ns##budget",
+		  "@type" : "@id"
+		},
+		"url" : {
+		  "@id" : "http://w3id.org/ocds/ns##planningUrl",
+		  "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+		}
 		   
   }
 }

@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "Tender": {
+      "@id": "http://w3id.org/ocds/ns##Tender"
+    },
+    "id" : {
+      "@id" : "http://w3id.org/ocds/ns##tenderId"
+    },
+    "title": {
+      "@id": "http://w3id.org/ocds/ns##tenderTitle",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "status": {
+      "@id": "http://w3id.org/ocds/ns##tenderStatus",
+      "@type" : "@id"
+    },
+    "lots" : {
+      "@id" : "http://w3id.org/ocds/ns##tenderLots",
+      "@type" : "@id"
+    },
+    "items" : {
+      "@id" : "http://w3id.org/ocds/ns##tenderItems",
+      "@type" : "@id"
+    },
+    "value" : {
+      "@id" : "http://w3id.org/ocds/ns##tenderValue",
+      "@type" : "@id"
+    },
+    "enquiryPeriod" : {
+      "@id" : "http://w3id.org/ocds/ns##enquiryPeriod",
+      "@type" : "@id"
+    },
+    "hasEnquiries" : {
+      "@id" : "http://w3id.org/ocds/ns##hasEnquiries",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "awardPeriod" : {
+      "@id" : "http://w3id.org/ocds/ns##awardPeriod",
+      "@type" : "@id"
+    },
+    "procuringEntity" : {
+      "@id" : "http://w3id.org/ocds/ns##procuringEntity",
+      "@type" : "@id"
+    },
+    "documents" : {
+      "@id" : "http://w3id.org/ocds/ns##tenderDocuments",
+      "@type" : "@id"
+    },
+    "tenderPeriod" : {
+      "@id" : "http://w3id.org/ocds/ns##tenderPeriod",
+      "@type" : "@id"
+    },
+    "submissionMethod" : {
+      "@id" : "http://w3id.org/ocds/ns##submissionMethod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "url" : {
+      "@id" : "http://w3id.org/ocds/ns##tenderUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    }
+  }
+}

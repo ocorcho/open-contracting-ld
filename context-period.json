@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "Period": {
+      "@id": "http://w3id.org/ocds/ns##Period"
+    },
+    "startDate": {
+      "@id": "http://w3id.org/ocds/ns##startDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endDate": {
+      "@id": "http://w3id.org/ocds/ns##endDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  }
+}

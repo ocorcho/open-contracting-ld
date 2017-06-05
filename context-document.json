@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "Document": {
+      "@id": "http://w3id.org/ocds/ns##Document"
+    },
+    "documentType" : {
+      "@id" : "http://w3id.org/ocds/ns##documentType",
+      "@type" : "@id"
+    },
+    "url" : {
+      "@id" : "http://w3id.org/ocds/ns##documentUrl",
+      "@type" : "@id"
+    },
+    "id" : {
+      "@id" : "http://w3id.org/ocds/ns##documentId"
+    },
+    "title" : {
+      "@id" : "http://w3id.org/ocds/ns##documentTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "dateModified" : {
+      "@id" : "http://w3id.org/ocds/ns##documentDateModified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "language" : {
+      "@id" : "http://w3id.org/ocds/ns##documentLanguage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "description" : {
+      "@id" : "http://w3id.org/ocds/ns##documentDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
