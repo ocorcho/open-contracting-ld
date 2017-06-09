@@ -1,44 +1,30 @@
 {
   "@context": {
-   
-
-
-   "Item" : {
-      "@id" : "http://w3id.org/ocds/ns##Item"
+    "Item": {
+      "@id": "http://w3id.org/ocds/ns##Item"
     },
-
-
-
-    "description" : {
-      "@id" : "http://w3id.org/ocds/ns##itemDescription",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    "description": {
+      "@id": "http://w3id.org/ocds/ns##itemDescription",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
-
-    "id" : {
-      "@id" : "http://w3id.org/ocds/ns##itemId"
+    "id": {
+      "@id": "http://w3id.org/ocds/ns##itemId"
     },
-
- 
-     "classification" : {
-      "@id" : "http://w3id.org/ocds/ns##classification",
-      "@type" : "@id"
+    "classification": {
+      "@id": "http://w3id.org/ocds/ns##classification",
+      "@type": "@id"
     },
-    "additionalClassifications" : {
-      "@id" : "http://w3id.org/ocds/ns##additionalClassifications",
-      "@type" : "@id"
+    "additionalClassifications": {
+      "@id": "http://w3id.org/ocds/ns##additionalClassifications",
+      "@type": "@id"
     },
-     "quantity" : {
-      "@id" : "http://w3id.org/ocds/ns##quantity",
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    "quantity": {
+      "@id": "http://w3id.org/ocds/ns##quantity",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
     },
-
-     "unit" : {
-      "@id" : "http://w3id.org/ocds/ns##unit",
-      "@type" : "@id"
+    "unit": {
+      "@id": "http://w3id.org/ocds/ns##unit",
+      "@type": "@id"
     }
-
-
-
-
   }
 }

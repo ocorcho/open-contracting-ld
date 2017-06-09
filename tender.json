@@ -66,8 +66,8 @@
   },
   "hasEnquiries": false,
   "awardPeriod": {
-    "@context": "http://girolabs.com.py/ocds/context-value.json",
-    "@type": "Value",
+    "@context": "http://girolabs.com.py/ocds/context-period.json",
+    "@type": "Period",
     "startDate": "2010-02-05T00:00:00-05:00",
     "endDate": "2010-03-17T10:10:33-04:00"
   },
@@ -104,6 +104,8 @@
     }
   ],
   "tenderPeriod": {
+    "@context": "http://girolabs.com.py/ocds/context-period.json",
+    "@type": "Period",
     "endDate": null,
     "startDate": "2010-03-15T09:00:00-04:00"
   },
