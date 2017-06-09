@@ -83,6 +83,8 @@
   },
   "documents": [
     {
+      "@context": "http://girolabs.com.py/ocds/context-document.json",
+      "@type": "Document",
       "id": "y%2FJgDClEAtk%3D",
       "documentType": "Condiciones Generales del Contrato - Bienes y Servicios por Subasta",
       "title": "Condiciones Generales del Contrato - Bienes y Servicios por Subasta",
@@ -91,6 +93,8 @@
       "format": "application/pdf"
     },
     {
+      "@context": "http://girolabs.com.py/ocds/context-document.json",
+      "@type": "Document",
       "id": "PhIjL%2Fj9z8k%3D",
       "documentType": "Instrucción a los Oferentes - Bienes y Servicios por Subasta",
       "title": "Instrucción a los Oferentes - Bienes y Servicios por Subasta",

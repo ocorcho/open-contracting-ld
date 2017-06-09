@@ -29,6 +29,10 @@
     "description" : {
       "@id" : "http://w3id.org/ocds/ns##documentDescription",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "format" : {
+      "@id" : "http://w3id.org/ocds/ns##format",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     }
   }
 }
