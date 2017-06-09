@@ -1,0 +1,79 @@
+{
+          "id": "246807-11-setiembre-srl-4",
+          "awardID": "246807-adqusicion-guantes-otros-insumos-medicos",
+          "dncpContractCode": "CD-13003-13-70684",
+          "title": "ADQUSICION DE GUANTES Y OTROS INSUMOS MEDICOS ",
+          "status": "active",
+          "value": {
+            "amount": 17875000,
+            "currency": "PYG"
+          },
+          "lots": [
+            {
+              "id": "nYZlDIKXpLc%3D",
+              "title": "Lote 1",
+              "items": [
+                "M99UFYWPOag%3D",
+                "7SmiEGR9Oes%3D",
+                "hPQ2FURf7RQ%3D",
+                "3LykMkkFXqU%3D",
+                "2iT5c5pHD9g%3D"
+              ]
+            }
+          ],
+          "items": [
+            {
+              "description": "Placa Radiografica Medica",
+              "id": "M99UFYWPOag%3D",
+              "classification": {
+                "schema": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay",
+                "id": "42201810-001",
+                "description": "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC",
+                "uri": "https://www.contrataciones.gov.py/datos/api/v2/doc/catalogo/nivel-5/42201810-001"
+              },
+              "quantity": 10,
+              "unit": {
+                "name": "Unidad",
+                "value": {
+                  "amount": 445000,
+                  "currency": "PYG"
+                }
+              }
+            }
+          ],
+          "dateSigned": "2013-04-05T12:00:00-04:00",
+          "suppliers": {
+            "name": "11 DE SETIEMBRE SRL",
+            "identifier": {
+              "id": "80028024-5",
+              "legalName": "11 DE SETIEMBRE SRL",
+              "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay"
+            },
+            "identifiers": {
+              "key": "246807-11-setiembre-srl-4"
+            }
+          },
+          "documents": [
+            {
+              "id": "uYTDVDNAh8E%3D",
+              "documentType": "Acta de Apertura",
+              "title": "Acta de Apertura",
+              "language": "es",
+              "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/uYTDVDNAh8E%253D",
+              "format": "application/pdf"
+            },
+            {
+              "id": "y%2FsMmn8q3tc%3D",
+              "documentType": "Cuadro Comparativo de Ofertas",
+              "title": "Cuadro Comparativo de Ofertas",
+              "language": "es",
+              "url": "https://www.contrataciones.gov.py/documentos/download/adjudicacion/y%252FsMmn8q3tc%253D",
+              "format": "application/pdf"
+            }
+          ],
+          "period": {
+            "endDate": "2013-04-15T12:00:00-04:00",
+            "startDate": "2013-04-05T12:00:00-04:00"
+          },
+          "url": "https://www.contrataciones.gov.py/datos/id/contratos/246807-11-setiembre-srl-4"
+  }

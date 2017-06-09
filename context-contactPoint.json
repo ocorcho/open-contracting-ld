@@ -4,11 +4,11 @@
       "@id" : "http://w3id.org/ocds/ns##contactPoint",
       "@type" : "@id"
     },
-      "contactPointUrl" : {
+    "url" : {
       "@id" : "http://w3id.org/ocds/ns##contactPointUrl",
       "@type" : "@id"
     },
-     "contactPointName" : {
+     "name" : {
       "@id" : "http://w3id.org/ocds/ns##contactPointName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },

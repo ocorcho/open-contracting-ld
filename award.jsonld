@@ -19,6 +19,9 @@
   "suppliers": [
     {    
 
+      "@context": "http://girolabs.com.py/ocds/context-organization.json",
+       "@type": "Organization",
+
       
       "name": "11 DE SETIEMBRE SRL",
 
@@ -30,13 +33,19 @@
         "key": "246807-11-setiembre-srl-4"
       },
       "address": {
+        "@context": "http://girolabs.com.py/ocds/context-address.json",
+         "@type": "Address",
         "streetAddress": "AVENIDA GENERAL SANTOS 860",
         "postalCode": "",
         "locality": "ASUNCION",
         "countryName": "Paraguay",
         "region": "Asunción"
       },
+
       "contactPoint": {
+        "@context": "http://girolabs.com.py/ocds/context-contactPoint.json",
+         "@type": "ContactPoint",
+
         "name": "MARTHA BAZZANO ROJAS",
         "faxNumber": "",
         "telephone": "204372",

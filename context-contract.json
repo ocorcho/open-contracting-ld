@@ -1,0 +1,100 @@
+{
+  "@context": {
+      
+
+
+
+      "Contract" : {
+      "@id" : "http://w3id.org/ocds/ns##Contract"
+    },
+
+
+
+  "id" : {
+      "@id" : "http://w3id.org/ocds/ns##contractId"
+    },
+
+   "title" : {
+      "@id" : "http://w3id.org/ocds/ns##contractTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+
+      "description" : {
+      "@id" : "http://w3id.org/ocds/ns##contractDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+
+      "status" : {
+      "@id" : "http://w3id.org/ocds/ns##contractStatus",
+      "@type" : "@id"
+    },
+
+    "period" : {
+      "@id" : "http://w3id.org/ocds/ns##contractPeriod",
+      "@type" : "@id"
+    },
+
+        "contractValue" : {
+      "@id" : "http://w3id.org/ocds/ns##contractValue",
+      "@type" : "@id"
+    },
+
+
+    "items" : {
+      "@id" : "http://w3id.org/ocds/ns##contractItems",
+      "@type" : "@id"
+    },
+
+      "dateSigned" : {
+      "@id" : "http://w3id.org/ocds/ns##dateSigned",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+
+       "documents" : {
+      "@id" : "http://w3id.org/ocds/ns##contractDocuments",
+      "@type" : "@id"
+    },
+
+
+     "implementation" : {
+      "@id" : "http://w3id.org/ocds/ns##implementation",
+      "@type" : "@id"
+    },
+
+
+    "relatedProcess":  {
+      "@id" : "http://w3id.org/ocds/ns##TODO",
+      "@type" : "@id"
+    },
+
+       "milestones" : {
+      "@id" : "http://w3id.org/ocds/ns##milestones",
+      "@type" : "@id"
+    },
+
+
+
+
+
+   
+
+     "dncpContractCode" : {
+      "@id" : "http://w3id.org/ocds/ns##dncpContractCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+
+ 
+
+    "contractAmendment" : {
+      "@id" : "http://w3id.org/ocds/ns##contractAmendment",
+      "@type" : "@id"
+    },
+   
+
+    "contractLots" : {
+      "@id" : "http://w3id.org/ocds/ns##contractLots",
+      "@type" : "@id"
+    }
+
+  }
+}
