@@ -1,14 +1,10 @@
 {
   "@context": {
-   
 
 
    "Item" : {
       "@id" : "http://w3id.org/ocds/ns##Item"
     },
-
-
-
     "description" : {
       "@id" : "http://w3id.org/ocds/ns##itemDescription",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
