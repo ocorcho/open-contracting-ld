@@ -4,8 +4,6 @@
       "@id" : "http://w3id.org/ocds/ns##Address",
         "@type" : "@id"
     },
-
-
    "streetAddress" : {
       "@id" : "http://w3id.org/ocds/ns##streetAddress",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -14,7 +12,6 @@
       "@id" : "http://w3id.org/ocds/ns##postalCode",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-
      "locality" : {
       "@id" : "http://w3id.org/ocds/ns##locality",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"

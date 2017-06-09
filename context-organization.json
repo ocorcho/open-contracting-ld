@@ -19,6 +19,18 @@
      "address" : {
       "@id" : "http://w3id.org/ocds/ns##address",
       "@type" : "@id"
+    },
+
+     "identifier" : {
+      "@id" : "http://w3id.org/ocds/ns##identifier",
+      "@type" : "@id"
+    },
+
+    "identifiers" : {
+      "@id" : "http://w3id.org/ocds/ns##additionalIdentifiers",
+      "@type" : "@id"
     }
+
+
   }
 }
