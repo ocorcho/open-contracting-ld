@@ -14,6 +14,11 @@
     "contactPoint" : {
       "@id" : "http://w3id.org/ocds/ns##contactPoint",
       "@type" : "@id"
+    },
+
+     "address" : {
+      "@id" : "http://w3id.org/ocds/ns##address",
+      "@type" : "@id"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "contactPoint" : {
+      "@id" : "http://w3id.org/ocds/ns##contactPoint",
+      "@type" : "@id"
+    },
+      "contactPointUrl" : {
+      "@id" : "http://w3id.org/ocds/ns##contactPointUrl",
+      "@type" : "@id"
+    },
+     "contactPointName" : {
+      "@id" : "http://w3id.org/ocds/ns##contactPointName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "faxNumber" : {
+      "@id" : "http://w3id.org/ocds/ns##faxNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "email" : {
+      "@id" : "http://w3id.org/ocds/ns##email",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "telephone" : {
+      "@id" : "http://w3id.org/ocds/ns##telephone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
