@@ -1,0 +1,30 @@
+{
+  "@context": {  
+
+  "Unit" : {
+      "@id" : "http://w3id.org/ocds/ns##Unit"
+    },
+    "name" : {
+      "@id" : "http://w3id.org/ocds/ns##unitName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "value" : {
+      "@id" : "http://w3id.org/ocds/ns##unitValue",
+      "@type" : "@id"
+    },
+    "uri" : {
+      "@id" : "http://w3id.org/ocds/ns##TODO",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+
+    "id" : {
+      "@id" : "http://w3id.org/ocds/ns##TODO",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+
+     "scheme" : {
+      "@id" : "http://w3id.org/ocds/ns##TODO",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }   
+  }
+}

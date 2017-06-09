@@ -45,6 +45,8 @@
                 "@type": "Unit",
                 "name": "Unidad",
                 "value": {
+                  "@context": "http://girolabs.com.py/ocds/context-value.json",
+                  "@type": "Value",
                   "amount": 445000,
                   "currency": "PYG"
                 }
@@ -57,6 +59,9 @@
             "@type": "Organization",
             "name": "11 DE SETIEMBRE SRL",
             "identifier": {
+              "@context": "http://girolabs.com.py/ocds/context-identifier.json",
+            "@type": "Identifier",
+            "@id": "80028024-5",
               "id": "80028024-5",
               "legalName": "11 DE SETIEMBRE SRL",
               "scheme": "Registro Único de Contribuyente emitido por el Ministerio de Hacienda del Gobierno de Paraguay"
@@ -69,7 +74,7 @@
             {
               "@context": "http://girolabs.com.py/ocds/context-document.json",
                "@type": "Document",
-
+               "@id": "https://www.contrataciones.gov.py/documentos/adjudicacion/uYTDVDNAh8E%253D",
               "id": "uYTDVDNAh8E%3D",
               "documentType": "Acta de Apertura",
               "title": "Acta de Apertura",
