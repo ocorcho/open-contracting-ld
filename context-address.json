@@ -1,0 +1,32 @@
+{
+  "@context": {   
+    "Address" : {
+      "@id" : "http://w3id.org/ocds/ns##Address",
+        "@type" : "@id"
+    },
+
+
+   "streetAddress" : {
+      "@id" : "http://w3id.org/ocds/ns##streetAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+  "postalCode" : {
+      "@id" : "http://w3id.org/ocds/ns##postalCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+
+     "locality" : {
+      "@id" : "http://w3id.org/ocds/ns##locality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+   "countryName" : {
+      "@id" : "http://w3id.org/ocds/ns##countryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+
+    "region" : {
+      "@id" : "http://w3id.org/ocds/ns##region",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
