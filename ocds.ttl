@@ -1,5 +1,8 @@
 @prefix : <http://w3id.org/ocds/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pc: <http://purl.org/procurement/public-contracts#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix sch: <http://schema.org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix seq: <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -1309,6 +1312,7 @@ dcterms:URI rdf:type owl:Class .
 
 ###  http://w3id.org/ocds/ns#Address
 :Address rdf:type owl:Class ;
+         rdfs:subClassOf sch:PostalAddress ;
          rdfs:comment "An address. This may be the legally registered address of the organization, or may be a correspondence address for this particular contracting process."@en ;
          rdfs:label "Address"@en .
 
@@ -1361,12 +1365,14 @@ dcterms:URI rdf:type owl:Class .
 
 ###  http://w3id.org/ocds/ns#ContactPoint
 :ContactPoint rdf:type owl:Class ;
+              rdfs:subClassOf sch:ContactPoint ;
               rdfs:comment "An person, contact point or department to contact in relation to this contracting process."@en ;
               rdfs:label "Contact point"@en .
 
 
 ###  http://w3id.org/ocds/ns#Contract
 :Contract rdf:type owl:Class ;
+          rdfs:subClassOf pc:Contract ;
           rdfs:comment "Information regarding the signed contract between the buyer and supplier(s)."@en ;
           rdfs:label "Contract"@en .
 
@@ -1386,6 +1392,7 @@ dcterms:URI rdf:type owl:Class .
 
 ###  http://w3id.org/ocds/ns#Document
 :Document rdf:type owl:Class ;
+          rdfs:subClassOf foaf:Document ;
           rdfs:comment "Links to, or descriptions of, external documents can be attached at various locations within the standard. Documents may be supporting information, formal notices, downloadable forms, or any other kind of resource that should be made public as part of full open contracting."@en ;
           rdfs:label "Document"@en .
 
@@ -1510,6 +1517,7 @@ dcterms:URI rdf:type owl:Class .
 
 ###  http://w3id.org/ocds/ns#Tender
 :Tender rdf:type owl:Class ;
+        rdfs:subClassOf pc:Tender ;
         rdfs:comment "Data regarding tender process - publicly inviting prospective contractors to submit bids for evaluation and selecting a winner or winners"@en ;
         rdfs:label "Tender"@en .
 
@@ -1541,6 +1549,7 @@ dcterms:URI rdf:type owl:Class .
 
 ###  http://w3id.org/ocds/ns#Value
 :Value rdf:type owl:Class ;
+       owl:equivalentClass gr:PriceSpecification ;
        rdfs:label "Value"@en .
 
 
