@@ -1426,6 +1426,7 @@ dcterms:URI rdf:type owl:Class .
 
 ###  http://w3id.org/ocds/ns#Item
 :Item rdf:type owl:Class ;
+      rdfs:subClassOf gr:Offering ;
       rdfs:comment "A good, service, or work to be contracted."@en ;
       rdfs:label "Item"@en .
 
@@ -1459,6 +1460,7 @@ dcterms:URI rdf:type owl:Class .
 
 ###  http://w3id.org/ocds/ns#Organization
 :Organization rdf:type owl:Class ;
+              owl:equivalentClass gr:BusinessEntity ;
               rdfs:comment "An organization."@en ;
               rdfs:label "Organization"@en .
 
