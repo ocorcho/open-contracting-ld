@@ -1,4 +1,5 @@
-{"@context": {
+{
+	"@context": {
         "Planning" : {
 		      "@id" : "http://w3id.org/ocds/ns##Planning"
 		    },
