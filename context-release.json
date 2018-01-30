@@ -1,0 +1,50 @@
+{     
+"@context":{
+ 
+ "Release" : {
+      "@id" : "http://w3id.org/ocds/ns##Release"
+    },
+    "ocid" : {
+      "@id" : "http://w3id.org/ocds/ns##ocid",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+
+     "date" : {
+      "@id" : "http://w3id.org/ocds/ns##releaseDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+
+    "tag" : {
+      "@id" : "http://w3id.org/ocds/ns##ReleaseTag"
+    },     
+    "initiationType" : {
+      "@id" : "http://w3id.org/ocds/ns##initiationType",
+      "@type" : "@id"
+    },    
+    "planning" : {
+      "@id" : "http://w3id.org/ocds/ns##planning",
+      "@type" : "@id"
+    },
+    "tender" : {
+      "@id" : "http://w3id.org/ocds/ns##tender",
+      "@type" : "@id"
+    },
+    "buyer" : {
+      "@id" : "http://w3id.org/ocds/ns##buyer",
+      "@type" : "@id"
+    },
+   "awards" : {
+      "@id" : "http://w3id.org/ocds/ns##award",
+      "@type" : "@id"
+    },   
+    "contracts" : {
+      "@id" : "http://w3id.org/ocds/ns##contracts",
+      "@type" : "@id"
+    },
+    "language" : {
+      "@id" : "http://w3id.org/ocds/ns##releaseLanguage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+    }
+}
+       

@@ -1,6 +1,8 @@
-{   
-    "@id": "Prueba",
-    "@context": "http://girolabs.com.py/ocds/context-planning.json",
+{
+
+    "@context": "http://girolabs.com.py/ocds/context-release.json",
+    "@id": "https://www.contrataciones.gov.py/datos/id/adjudicaciones/193399-adquisicion-scanner",
+    "@type": "Release",
     "language": "es",
     "ocid": "ocds-03ad3f-193399",
     "id": "193399-adquisicion-scanner",
@@ -251,8 +253,7 @@
         ],
         "url": "https://www.contrataciones.gov.py/datos/id/adjudicaciones/193399-adquisicion-scanner"
     }],
-    "contracts": [
-        {
+    "contracts": [{
             "@context": "http://girolabs.com.py/ocds/context-contract.json",
             "@type": "Contract",
             "@id": "https://www.contrataciones.gov.py/datos/id/contratos/193399-data-systems-sa-emisora-capital-abierto-2",
@@ -466,5 +467,6 @@
                 "startDate": "2010-04-15T12:00:00-04:00"
             },
             "url": "https://www.contrataciones.gov.py/datos/id/contratos/193399-master-soft-srl-3"
-        }]
-    }
+        }
+    ]
+}
