@@ -1,4 +1,4 @@
-@prefix : <http://w3id.org/ocds/ns#> .
+@prefix : <http://purl.org/onto-ocds/ocds#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pc: <http://purl.org/procurement/public-contracts#> .
 @prefix gr: <http://purl.org/goodrelations/v1#> .
@@ -10,9 +10,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://w3id.org/ocds/ns#> .
+@base <http://purl.org/onto-ocds/ocds#> .
 
-<http://w3id.org/ocds/ns#> rdf:type owl:Ontology ;
+<http://purl.org/onto-ocds/ocds#> rdf:type owl:Ontology ;
                             owl:imports <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl> ;
                             dcterms:author <https://twitter.com/CMaudry> ;
                             dcterms:license <https://creativecommons.org/licenses/by/2.0/> ;
@@ -31,7 +31,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://w3id.org/ocds/ns#additionalClassifications
+###  http://purl.org/onto-ocds/ocds#additionalClassifications
 :additionalClassifications rdf:type owl:ObjectProperty ;
                            rdfs:domain :Item ;
                            rdfs:range :Classification ;
@@ -39,7 +39,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                            rdfs:label "Additional classifications"@en .
 
 
-###  http://w3id.org/ocds/ns#additionalIdentifiers
+###  http://purl.org/onto-ocds/ocds#additionalIdentifiers
 :additionalIdentifiers rdf:type owl:ObjectProperty ;
                        rdfs:domain :Organization ;
                        rdfs:range :Identifier ;
@@ -47,14 +47,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
                        rdfs:label "Additional identifiers"@en .
 
 
-###  http://w3id.org/ocds/ns#address
+###  http://purl.org/onto-ocds/ocds#address
 :address rdf:type owl:ObjectProperty ;
          rdfs:domain :Organization ;
          rdfs:range :Address ;
          rdfs:label "Address"@en .
 
 
-###  http://w3id.org/ocds/ns#award
+###  http://purl.org/onto-ocds/ocds#award
 :award rdf:type owl:ObjectProperty ,
                 owl:InverseFunctionalProperty ;
        rdfs:domain :Release ;
@@ -63,14 +63,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
        rdfs:label "Awards"@en .
 
 
-###  http://w3id.org/ocds/ns#awardAmendment
+###  http://purl.org/onto-ocds/ocds#awardAmendment
 :awardAmendment rdf:type owl:ObjectProperty ;
                 rdfs:domain :Award ;
                 rdfs:range :Amendment ;
                 rdfs:label "Award amendment"@en .
 
 
-###  http://w3id.org/ocds/ns#awardDocuments
+###  http://purl.org/onto-ocds/ocds#awardDocuments
 :awardDocuments rdf:type owl:ObjectProperty ;
                 rdfs:domain :Award ;
                 rdfs:range :Document ;
@@ -78,14 +78,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
                 rdfs:label "Award documents"@en .
 
 
-###  http://w3id.org/ocds/ns#awardFollows
+###  http://purl.org/onto-ocds/ocds#awardFollows
 :awardFollows rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf seq:directlyFollows ;
               rdfs:domain :Award ;
               rdfs:range :Tender .
 
 
-###  http://w3id.org/ocds/ns#awardID
+###  http://purl.org/onto-ocds/ocds#awardID
 :awardID rdf:type owl:ObjectProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Contract ;
@@ -94,7 +94,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
          rdfs:label "Award ID"@en .
 
 
-###  http://w3id.org/ocds/ns#awardPeriod
+###  http://purl.org/onto-ocds/ocds#awardPeriod
 :awardPeriod rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Tender ;
@@ -103,14 +103,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:label "Award period"@en .
 
 
-###  http://w3id.org/ocds/ns#awardPrecedes
+###  http://purl.org/onto-ocds/ocds#awardPrecedes
 :awardPrecedes rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf seq:directlyPrecedes ;
                rdfs:domain :Award ;
                rdfs:range :Contract .
 
 
-###  http://w3id.org/ocds/ns#awardStatus
+###  http://purl.org/onto-ocds/ocds#awardStatus
 :awardStatus rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Award ;
@@ -119,7 +119,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:label "Award status" .
 
 
-###  http://w3id.org/ocds/ns#awardValue
+###  http://purl.org/onto-ocds/ocds#awardValue
 :awardValue rdf:type owl:ObjectProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Award ;
@@ -128,7 +128,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "Award value"@en .
 
 
-###  http://w3id.org/ocds/ns#budget
+###  http://purl.org/onto-ocds/ocds#budget
 :budget rdf:type owl:ObjectProperty ,
                  owl:FunctionalProperty ;
         rdfs:domain :Planning ;
@@ -136,7 +136,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
         rdfs:label "Budget"@en .
 
 
-###  http://w3id.org/ocds/ns#budgetAmount
+###  http://purl.org/onto-ocds/ocds#budgetAmount
 :budgetAmount rdf:type owl:ObjectProperty ;
               rdfs:domain :Budget ;
               rdfs:range :Value ;
@@ -144,7 +144,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
               rdfs:label "Budget amount"@en .
 
 
-###  http://w3id.org/ocds/ns#budgetSource
+###  http://purl.org/onto-ocds/ocds#budgetSource
 :budgetSource rdf:type owl:ObjectProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Budget ;
@@ -153,7 +153,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
               rdfs:label "Budget Data Source"@en .
 
 
-###  http://w3id.org/ocds/ns#budgetUri
+###  http://purl.org/onto-ocds/ocds#budgetUri
 :budgetUri rdf:type owl:ObjectProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Budget ;
@@ -162,7 +162,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Linked budget information"@en .
 
 
-###  http://w3id.org/ocds/ns#buyer
+###  http://purl.org/onto-ocds/ocds#buyer
 :buyer rdf:type owl:ObjectProperty ,
                 owl:FunctionalProperty ;
        rdfs:domain :Release ;
@@ -171,7 +171,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
        rdfs:label "Buyer"@en .
 
 
-###  http://w3id.org/ocds/ns#changes
+###  http://purl.org/onto-ocds/ocds#changes
 :changes rdf:type owl:ObjectProperty ;
          rdfs:domain :Amendment ;
          rdfs:range :Change ;
@@ -179,7 +179,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
          rdfs:label "Amended fields"@en .
 
 
-###  http://w3id.org/ocds/ns#classification
+###  http://purl.org/onto-ocds/ocds#classification
 :classification rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Item ;
@@ -188,7 +188,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                 rdfs:label "Classification"@en .
 
 
-###  http://w3id.org/ocds/ns#classificationScheme
+###  http://purl.org/onto-ocds/ocds#classificationScheme
 :classificationScheme rdf:type owl:ObjectProperty ,
                                owl:FunctionalProperty ;
                       rdfs:domain :Classification ;
@@ -197,7 +197,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                       rdfs:label "Classification scheme"@en .
 
 
-###  http://w3id.org/ocds/ns#classificationUri
+###  http://purl.org/onto-ocds/ocds#classificationUri
 :classificationUri rdf:type owl:ObjectProperty ,
                             owl:FunctionalProperty ;
                    rdfs:domain :Classification ;
@@ -206,14 +206,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    rdfs:label "Classification URI"@en .
 
 
-###  http://w3id.org/ocds/ns#contactPoint
+###  http://purl.org/onto-ocds/ocds#contactPoint
 :contactPoint rdf:type owl:ObjectProperty ;
               rdfs:domain :Organization ;
               rdfs:range :ContactPoint ;
               rdfs:label "Contact point"@en .
 
 
-###  http://w3id.org/ocds/ns#contactPointUrl
+###  http://purl.org/onto-ocds/ocds#contactPointUrl
 :contactPointUrl rdf:type owl:ObjectProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :ContactPoint ;
@@ -222,14 +222,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
                  rdfs:label "Contact point URL"@en .
 
 
-###  http://w3id.org/ocds/ns#contractAmendment
+###  http://purl.org/onto-ocds/ocds#contractAmendment
 :contractAmendment rdf:type owl:ObjectProperty ;
                    rdfs:domain :Contract ;
                    rdfs:range :Amendment ;
                    rdfs:label "Contract amendment"@en .
 
 
-###  http://w3id.org/ocds/ns#contractDocuments
+###  http://purl.org/onto-ocds/ocds#contractDocuments
 :contractDocuments rdf:type owl:ObjectProperty ;
                    rdfs:domain :Contract ;
                    rdfs:range :Document ;
@@ -237,14 +237,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    rdfs:label "Contract documents"@en .
 
 
-###  http://w3id.org/ocds/ns#contractFollows
+###  http://purl.org/onto-ocds/ocds#contractFollows
 :contractFollows rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf seq:directlyFollows ;
                  rdfs:domain :Contract ;
                  rdfs:range :Award .
 
 
-###  http://w3id.org/ocds/ns#contractItems
+###  http://purl.org/onto-ocds/ocds#contractItems
 :contractItems rdf:type owl:ObjectProperty ;
                rdfs:domain :Contract ;
                rdfs:range :Item ;
@@ -252,7 +252,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Items Contracted"@en .
 
 
-###  http://w3id.org/ocds/ns#contractLots
+###  http://purl.org/onto-ocds/ocds#contractLots
 :contractLots rdf:type owl:ObjectProperty ;
               rdfs:domain :Contract ;
               rdfs:range :Lot ;
@@ -260,7 +260,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
               rdfs:label "Contract lots"@en .
 
 
-###  http://w3id.org/ocds/ns#contractPeriod
+###  http://purl.org/onto-ocds/ocds#contractPeriod
 :contractPeriod rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Award ,
@@ -271,7 +271,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                 rdfs:label "Contract period"@en .
 
 
-###  http://w3id.org/ocds/ns#contractStatus
+###  http://purl.org/onto-ocds/ocds#contractStatus
 :contractStatus rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Contract ;
@@ -280,7 +280,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                 rdfs:label "Contract status"@en .
 
 
-###  http://w3id.org/ocds/ns#contractValue
+###  http://purl.org/onto-ocds/ocds#contractValue
 :contractValue rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Contract ;
@@ -289,7 +289,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Contract value"@en .
 
 
-###  http://w3id.org/ocds/ns#contracts
+###  http://purl.org/onto-ocds/ocds#contracts
 :contracts rdf:type owl:ObjectProperty ,
                     owl:InverseFunctionalProperty ;
            rdfs:domain :Release ;
@@ -298,7 +298,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Contracts"@en .
 
 
-###  http://w3id.org/ocds/ns#documentType
+###  http://purl.org/onto-ocds/ocds#documentType
 :documentType rdf:type owl:ObjectProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Document ;
@@ -307,7 +307,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
               rdfs:label "Document type"@en .
 
 
-###  http://w3id.org/ocds/ns#documentUrl
+###  http://purl.org/onto-ocds/ocds#documentUrl
 :documentUrl rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Document ;
@@ -316,7 +316,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:label "Document URL"@en .
 
 
-###  http://w3id.org/ocds/ns#documents
+###  http://purl.org/onto-ocds/ocds#documents
 :documents rdf:type owl:ObjectProperty ;
            rdfs:domain :Planning ;
            rdfs:range :Document ;
@@ -324,7 +324,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Documents"@en .
 
 
-###  http://w3id.org/ocds/ns#enquiryPeriod
+###  http://purl.org/onto-ocds/ocds#enquiryPeriod
 :enquiryPeriod rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Tender ;
@@ -333,7 +333,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Enquiry period"@en .
 
 
-###  http://w3id.org/ocds/ns#former_value
+###  http://purl.org/onto-ocds/ocds#former_value
 :former_value rdf:type owl:ObjectProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Change ;
@@ -342,7 +342,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
               rdfs:label "Former value"@en .
 
 
-###  http://w3id.org/ocds/ns#identifier
+###  http://purl.org/onto-ocds/ocds#identifier
 :identifier rdf:type owl:ObjectProperty ;
             rdfs:domain :Organization ;
             rdfs:range :Identifier ;
@@ -350,7 +350,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "Organization identifier"@en .
 
 
-###  http://w3id.org/ocds/ns#identifierScheme
+###  http://purl.org/onto-ocds/ocds#identifierScheme
 :identifierScheme rdf:type owl:ObjectProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :Identifier ;
@@ -359,7 +359,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   rdfs:label "Identifier scheme"@en .
 
 
-###  http://w3id.org/ocds/ns#identifierUri
+###  http://purl.org/onto-ocds/ocds#identifierUri
 :identifierUri rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Identifier ;
@@ -368,7 +368,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Identifier URI"@en .
 
 
-###  http://w3id.org/ocds/ns#implementation
+###  http://purl.org/onto-ocds/ocds#implementation
 :implementation rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Contract ;
@@ -377,7 +377,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                 rdfs:label "Implementation"@en .
 
 
-###  http://w3id.org/ocds/ns#implementationDocuments
+###  http://purl.org/onto-ocds/ocds#implementationDocuments
 :implementationDocuments rdf:type owl:ObjectProperty ;
                          rdfs:domain :Implementation ;
                          rdfs:range :Document ;
@@ -385,7 +385,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                          rdfs:label "Implementation documents"@en .
 
 
-###  http://w3id.org/ocds/ns#implementationMilestones
+###  http://purl.org/onto-ocds/ocds#implementationMilestones
 :implementationMilestones rdf:type owl:ObjectProperty ;
                           rdfs:domain :Implementation ;
                           rdfs:range :Milestone ;
@@ -393,7 +393,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                           rdfs:label "Implementation milestones"@en .
 
 
-###  http://w3id.org/ocds/ns#initiationType
+###  http://purl.org/onto-ocds/ocds#initiationType
 :initiationType rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Release ;
@@ -402,13 +402,13 @@ dcterms:title rdf:type owl:AnnotationProperty .
                 rdfs:label "Initiation Type"@en .
 
 
-###  http://w3id.org/ocds/ns#lotItems
+###  http://purl.org/onto-ocds/ocds#lotItems
 :lotItems rdf:type owl:ObjectProperty ;
           rdfs:domain :Lot ;
           rdfs:range :Item .
 
 
-###  http://w3id.org/ocds/ns#milestoneDocuments
+###  http://purl.org/onto-ocds/ocds#milestoneDocuments
 :milestoneDocuments rdf:type owl:ObjectProperty ;
                     rdfs:domain :Milestone ;
                     rdfs:range :Document ;
@@ -416,7 +416,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                     rdfs:label "Milestone documents"@en .
 
 
-###  http://w3id.org/ocds/ns#milestones
+###  http://purl.org/onto-ocds/ocds#milestones
 :milestones rdf:type owl:ObjectProperty ;
             rdfs:domain :Tender ;
             rdfs:range :Milestone ;
@@ -424,7 +424,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "Milestones"@en .
 
 
-###  http://w3id.org/ocds/ns#minValue
+###  http://purl.org/onto-ocds/ocds#minValue
 :minValue rdf:type owl:ObjectProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Tender ;
@@ -433,7 +433,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:label "Minimum value"@en .
 
 
-###  http://w3id.org/ocds/ns#planning
+###  http://purl.org/onto-ocds/ocds#planning
 :planning rdf:type owl:ObjectProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Release ;
@@ -442,14 +442,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:label "Planning"@en .
 
 
-###  http://w3id.org/ocds/ns#planningPrecedes
+###  http://purl.org/onto-ocds/ocds#planningPrecedes
 :planningPrecedes rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf seq:directlyPrecedes ;
                   rdfs:domain :Planning ;
                   rdfs:range :Tender .
 
 
-###  http://w3id.org/ocds/ns#procurementMethod
+###  http://purl.org/onto-ocds/ocds#procurementMethod
 :procurementMethod rdf:type owl:ObjectProperty ,
                             owl:FunctionalProperty ;
                    rdfs:domain :Tender ;
@@ -458,7 +458,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    rdfs:label "Procurement method"@en .
 
 
-###  http://w3id.org/ocds/ns#procuringEntity
+###  http://purl.org/onto-ocds/ocds#procuringEntity
 :procuringEntity rdf:type owl:ObjectProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :Tender ;
@@ -467,7 +467,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                  rdfs:label "Procuring entity"@en .
 
 
-###  http://w3id.org/ocds/ns#providerOrganization
+###  http://purl.org/onto-ocds/ocds#providerOrganization
 :providerOrganization rdf:type owl:ObjectProperty ;
                       rdfs:domain :Transaction ;
                       rdfs:range :Identifier ;
@@ -475,7 +475,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                       rdfs:label "Provider organization"@en .
 
 
-###  http://w3id.org/ocds/ns#receiverOrganization
+###  http://purl.org/onto-ocds/ocds#receiverOrganization
 :receiverOrganization rdf:type owl:ObjectProperty ;
                       rdfs:domain :Transaction ;
                       rdfs:range :Identifier ;
@@ -483,7 +483,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                       rdfs:label "Receiver organization"@en .
 
 
-###  http://w3id.org/ocds/ns#suppliers
+###  http://purl.org/onto-ocds/ocds#suppliers
 :suppliers rdf:type owl:ObjectProperty ;
            rdfs:domain :Contract ;
            rdfs:range :Organization ;
@@ -491,7 +491,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Suppliers"@en .
 
 
-###  http://w3id.org/ocds/ns#tag
+###  http://purl.org/onto-ocds/ocds#tag
 :tag rdf:type owl:ObjectProperty ,
               owl:FunctionalProperty ;
      rdfs:domain :Release ;
@@ -500,7 +500,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
      rdfs:label "Release Tag"@en .
 
 
-###  http://w3id.org/ocds/ns#tender
+###  http://purl.org/onto-ocds/ocds#tender
 :tender rdf:type owl:ObjectProperty ,
                  owl:InverseFunctionalProperty ;
         rdfs:domain :Release ;
@@ -509,7 +509,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
         rdfs:label "Tender"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderAmendment
+###  http://purl.org/onto-ocds/ocds#tenderAmendment
 :tenderAmendment rdf:type owl:ObjectProperty ;
                  rdfs:domain :Tender ;
                  rdfs:range :Amendment ;
@@ -517,7 +517,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                  rdfs:label "Tender amendment"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderDocuments
+###  http://purl.org/onto-ocds/ocds#tenderDocuments
 :tenderDocuments rdf:type owl:ObjectProperty ;
                  rdfs:domain :Tender ;
                  rdfs:range :Document ;
@@ -525,14 +525,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
                  rdfs:label "Tender documents"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderFollows
+###  http://purl.org/onto-ocds/ocds#tenderFollows
 :tenderFollows rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf seq:directlyFollows ;
                rdfs:domain :Tender ;
                rdfs:range :Planning .
 
 
-###  http://w3id.org/ocds/ns#tenderItems
+###  http://purl.org/onto-ocds/ocds#tenderItems
 :tenderItems rdf:type owl:ObjectProperty ;
              rdfs:domain :Tender ;
              rdfs:range :Item ;
@@ -540,7 +540,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:label "Items to be procured"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderLots
+###  http://purl.org/onto-ocds/ocds#tenderLots
 :tenderLots rdf:type owl:ObjectProperty ;
             rdfs:domain :Tender ;
             rdfs:range :Lot ;
@@ -548,7 +548,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "Tender lots"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderPeriod
+###  http://purl.org/onto-ocds/ocds#tenderPeriod
 :tenderPeriod rdf:type owl:ObjectProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Tender ;
@@ -557,14 +557,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
               rdfs:label "Tender period"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderPrecedes
+###  http://purl.org/onto-ocds/ocds#tenderPrecedes
 :tenderPrecedes rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf seq:directlyPrecedes ;
                 rdfs:domain :Tender ;
                 rdfs:range :Award .
 
 
-###  http://w3id.org/ocds/ns#tenderStatus
+###  http://purl.org/onto-ocds/ocds#tenderStatus
 :tenderStatus rdf:type owl:ObjectProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Tender ;
@@ -573,7 +573,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
               rdfs:label "Tender Status"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderValue
+###  http://purl.org/onto-ocds/ocds#tenderValue
 :tenderValue rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Tender ;
@@ -582,7 +582,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:label "Tender value"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderers
+###  http://purl.org/onto-ocds/ocds#tenderers
 :tenderers rdf:type owl:ObjectProperty ;
            rdfs:domain :Tender ;
            rdfs:range :Organization ;
@@ -590,7 +590,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Tenderers"@en .
 
 
-###  http://w3id.org/ocds/ns#transactionAmount
+###  http://purl.org/onto-ocds/ocds#transactionAmount
 :transactionAmount rdf:type owl:ObjectProperty ;
                    rdfs:domain :Transaction ;
                    rdfs:range :Value ;
@@ -598,7 +598,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    rdfs:label "Transaction amount"@en .
 
 
-###  http://w3id.org/ocds/ns#transactionSource
+###  http://purl.org/onto-ocds/ocds#transactionSource
 :transactionSource rdf:type owl:ObjectProperty ,
                             owl:FunctionalProperty ;
                    rdfs:domain :Transaction ;
@@ -607,7 +607,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    rdfs:label "Transaction Data Source"@en .
 
 
-###  http://w3id.org/ocds/ns#transactionUri
+###  http://purl.org/onto-ocds/ocds#transactionUri
 :transactionUri rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Transaction ;
@@ -616,7 +616,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                 rdfs:label "Linked spending information"@en .
 
 
-###  http://w3id.org/ocds/ns#transactions
+###  http://purl.org/onto-ocds/ocds#transactions
 :transactions rdf:type owl:ObjectProperty ;
               rdfs:domain :Implementation ;
               rdfs:range :Transaction ;
@@ -624,7 +624,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
               rdfs:label "Transactions"@en .
 
 
-###  http://w3id.org/ocds/ns#unit
+###  http://purl.org/onto-ocds/ocds#unit
 :unit rdf:type owl:ObjectProperty ,
                owl:FunctionalProperty ;
       rdfs:domain :Item ;
@@ -633,7 +633,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
       rdfs:label "Unit"@en .
 
 
-###  http://w3id.org/ocds/ns#unitValue
+###  http://purl.org/onto-ocds/ocds#unitValue
 :unitValue rdf:type owl:ObjectProperty ;
            rdfs:domain :Unit ;
            rdfs:range :Value ;
@@ -644,7 +644,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  http://w3id.org/ocds/ns#amendmentDate
+###  http://purl.org/onto-ocds/ocds#amendmentDate
 :amendmentDate rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Amendment ;
@@ -653,7 +653,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Amendment Date"@en .
 
 
-###  http://w3id.org/ocds/ns#amendmentRationale
+###  http://purl.org/onto-ocds/ocds#amendmentRationale
 :amendmentRationale rdf:type owl:DatatypeProperty ,
                              owl:FunctionalProperty ;
                     rdfs:domain :Amendment ;
@@ -662,7 +662,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                     rdfs:label "Amendment rationale"@en .
 
 
-###  http://w3id.org/ocds/ns#awardCriteria
+###  http://purl.org/onto-ocds/ocds#awardCriteria
 :awardCriteria rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Tender ;
@@ -671,7 +671,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Award criteria"@en .
 
 
-###  http://w3id.org/ocds/ns#awardCriteriaDetails
+###  http://purl.org/onto-ocds/ocds#awardCriteriaDetails
 :awardCriteriaDetails rdf:type owl:DatatypeProperty ,
                                owl:FunctionalProperty ;
                       rdfs:domain :Tender ;
@@ -680,7 +680,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                       rdfs:label "Award criteria details"@en .
 
 
-###  http://w3id.org/ocds/ns#awardDate
+###  http://purl.org/onto-ocds/ocds#awardDate
 :awardDate rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Award ;
@@ -689,7 +689,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Award date"@en .
 
 
-###  http://w3id.org/ocds/ns#awardDescription
+###  http://purl.org/onto-ocds/ocds#awardDescription
 :awardDescription rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :Award ;
@@ -697,7 +697,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   rdfs:label "Award description" .
 
 
-###  http://w3id.org/ocds/ns#awardId
+###  http://purl.org/onto-ocds/ocds#awardId
 :awardId rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Award ;
@@ -706,7 +706,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
          rdfs:label "Award ID"@en .
 
 
-###  http://w3id.org/ocds/ns#awardTitle
+###  http://purl.org/onto-ocds/ocds#awardTitle
 :awardTitle rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Award ;
@@ -714,19 +714,19 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "Award title"@en .
 
 
-###  http://w3id.org/ocds/ns#awardURL
+###  http://purl.org/onto-ocds/ocds#awardURL
 :awardURL rdf:type owl:DatatypeProperty ;
           rdfs:domain :Award ;
           rdfs:range xsd:anyURI .
 
 
-###  http://w3id.org/ocds/ns#budgetDescription
+###  http://purl.org/onto-ocds/ocds#budgetDescription
 :budgetDescription rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Budget ;
                    rdfs:range xsd:string .
 
 
-###  http://w3id.org/ocds/ns#budgetId
+###  http://purl.org/onto-ocds/ocds#budgetId
 :budgetId rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Budget ;
@@ -736,7 +736,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:label "Budget ID"@en .
 
 
-###  http://w3id.org/ocds/ns#classificationDescription
+###  http://purl.org/onto-ocds/ocds#classificationDescription
 :classificationDescription rdf:type owl:DatatypeProperty ,
                                     owl:FunctionalProperty ;
                            rdfs:domain :Classification ;
@@ -745,7 +745,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                            rdfs:label "Classification description"@en .
 
 
-###  http://w3id.org/ocds/ns#classificationId
+###  http://purl.org/onto-ocds/ocds#classificationId
 :classificationId rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :Classification ;
@@ -755,7 +755,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   rdfs:label "Classification ID"@en .
 
 
-###  http://w3id.org/ocds/ns#contactPointName
+###  http://purl.org/onto-ocds/ocds#contactPointName
 :contactPointName rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :ContactPoint ;
@@ -764,7 +764,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   rdfs:label "Contact point name"@en .
 
 
-###  http://w3id.org/ocds/ns#contractDescription
+###  http://purl.org/onto-ocds/ocds#contractDescription
 :contractDescription rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
                      rdfs:domain :Contract ;
@@ -772,7 +772,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                      rdfs:label "Contract description"@en .
 
 
-###  http://w3id.org/ocds/ns#contractId
+###  http://purl.org/onto-ocds/ocds#contractId
 :contractId rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Contract ;
@@ -782,7 +782,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "Contract ID"@en .
 
 
-###  http://w3id.org/ocds/ns#contractTitle
+###  http://purl.org/onto-ocds/ocds#contractTitle
 :contractTitle rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Contract ;
@@ -790,7 +790,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Contract title" .
 
 
-###  http://w3id.org/ocds/ns#countryName
+###  http://purl.org/onto-ocds/ocds#countryName
 :countryName rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Address ;
@@ -799,7 +799,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:label "Country name"@en .
 
 
-###  http://w3id.org/ocds/ns#currency
+###  http://purl.org/onto-ocds/ocds#currency
 :currency rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Value ;
@@ -808,7 +808,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:label "Currency"@en .
 
 
-###  http://w3id.org/ocds/ns#datePublished
+###  http://purl.org/onto-ocds/ocds#datePublished
 :datePublished rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Document ;
@@ -817,7 +817,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Publication date"@en .
 
 
-###  http://w3id.org/ocds/ns#dateSigned
+###  http://purl.org/onto-ocds/ocds#dateSigned
 :dateSigned rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Contract ;
@@ -826,7 +826,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "Date of signature"@en .
 
 
-###  http://w3id.org/ocds/ns#dncpContractCode
+###  http://purl.org/onto-ocds/ocds#dncpContractCode
 :dncpContractCode rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :Contract ;
@@ -835,7 +835,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   rdfs:label "Código de contrato"@es .
 
 
-###  http://w3id.org/ocds/ns#documentDateModified
+###  http://purl.org/onto-ocds/ocds#documentDateModified
 :documentDateModified rdf:type owl:DatatypeProperty ,
                                owl:FunctionalProperty ;
                       rdfs:domain :Document ;
@@ -844,7 +844,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                       rdfs:label "Document modification date"@en .
 
 
-###  http://w3id.org/ocds/ns#documentDescription
+###  http://purl.org/onto-ocds/ocds#documentDescription
 :documentDescription rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
                      rdfs:domain :Document ;
@@ -853,7 +853,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                      rdfs:label "Document description"@en .
 
 
-###  http://w3id.org/ocds/ns#documentId
+###  http://purl.org/onto-ocds/ocds#documentId
 :documentId rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Document ;
@@ -863,7 +863,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "Document ID"@en .
 
 
-###  http://w3id.org/ocds/ns#documentLanguage
+###  http://purl.org/onto-ocds/ocds#documentLanguage
 :documentLanguage rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :Document ;
@@ -872,7 +872,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   rdfs:label "Document language"@en .
 
 
-###  http://w3id.org/ocds/ns#documentTitle
+###  http://purl.org/onto-ocds/ocds#documentTitle
 :documentTitle rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Document ;
@@ -881,7 +881,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Document title"@en .
 
 
-###  http://w3id.org/ocds/ns#dueDate
+###  http://purl.org/onto-ocds/ocds#dueDate
 :dueDate rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Milestone ;
@@ -890,7 +890,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
          rdfs:label "Due date"@en .
 
 
-###  http://w3id.org/ocds/ns#eligibilityCriteria
+###  http://purl.org/onto-ocds/ocds#eligibilityCriteria
 :eligibilityCriteria rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
                      rdfs:domain :Tender ;
@@ -899,7 +899,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                      rdfs:label "Eligibility criteria"@en .
 
 
-###  http://w3id.org/ocds/ns#email
+###  http://purl.org/onto-ocds/ocds#email
 :email rdf:type owl:DatatypeProperty ,
                 owl:FunctionalProperty ;
        rdfs:domain :ContactPoint ;
@@ -908,7 +908,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
        rdfs:label "Email"@en .
 
 
-###  http://w3id.org/ocds/ns#endDate
+###  http://purl.org/onto-ocds/ocds#endDate
 :endDate rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Period ;
@@ -917,7 +917,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
          rdfs:label "End date"@en .
 
 
-###  http://w3id.org/ocds/ns#faxNumber
+###  http://purl.org/onto-ocds/ocds#faxNumber
 :faxNumber rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :ContactPoint ;
@@ -926,7 +926,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Fax number"@en .
 
 
-###  http://w3id.org/ocds/ns#format
+###  http://purl.org/onto-ocds/ocds#format
 :format rdf:type owl:DatatypeProperty ,
                  owl:FunctionalProperty ;
         rdfs:domain :Document ;
@@ -935,7 +935,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
         rdfs:label "Format"@en .
 
 
-###  http://w3id.org/ocds/ns#hasEnquiries
+###  http://purl.org/onto-ocds/ocds#hasEnquiries
 :hasEnquiries rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Tender ;
@@ -944,7 +944,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
               rdfs:label "Has enquiries"@en .
 
 
-###  http://w3id.org/ocds/ns#id
+###  http://purl.org/onto-ocds/ocds#id
 :id rdf:type owl:DatatypeProperty ,
              owl:FunctionalProperty ;
     rdfs:domain :Release ;
@@ -953,7 +953,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
     rdfs:label "Release ID" .
 
 
-###  http://w3id.org/ocds/ns#identifierId
+###  http://purl.org/onto-ocds/ocds#identifierId
 :identifierId rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Identifier ;
@@ -963,7 +963,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
               rdfs:label "Identifier ID"@en .
 
 
-###  http://w3id.org/ocds/ns#itemDescription
+###  http://purl.org/onto-ocds/ocds#itemDescription
 :itemDescription rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :Item ;
@@ -972,7 +972,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                  rdfs:label "Item description"@en .
 
 
-###  http://w3id.org/ocds/ns#itemId
+###  http://purl.org/onto-ocds/ocds#itemId
 :itemId rdf:type owl:DatatypeProperty ,
                  owl:FunctionalProperty ;
         rdfs:domain :Item ;
@@ -982,7 +982,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
         rdfs:label "Item ID"@en .
 
 
-###  http://w3id.org/ocds/ns#legalName
+###  http://purl.org/onto-ocds/ocds#legalName
 :legalName rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Identifier ;
@@ -991,7 +991,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Legal name"@en .
 
 
-###  http://w3id.org/ocds/ns#locality
+###  http://purl.org/onto-ocds/ocds#locality
 :locality rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Address ;
@@ -1000,21 +1000,21 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:label "Locality"@en .
 
 
-###  http://w3id.org/ocds/ns#lotId
+###  http://purl.org/onto-ocds/ocds#lotId
 :lotId rdf:type owl:DatatypeProperty ,
                 owl:FunctionalProperty ;
        rdfs:domain :Lot ;
        rdfs:range xsd:string .
 
 
-###  http://w3id.org/ocds/ns#lotTitle
+###  http://purl.org/onto-ocds/ocds#lotTitle
 :lotTitle rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Lot ;
           rdfs:range xsd:string .
 
 
-###  http://w3id.org/ocds/ns#milestoneDateModified
+###  http://purl.org/onto-ocds/ocds#milestoneDateModified
 :milestoneDateModified rdf:type owl:DatatypeProperty ,
                                 owl:FunctionalProperty ;
                        rdfs:domain :Milestone ;
@@ -1023,7 +1023,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                        rdfs:label "Milestone modification date"@en .
 
 
-###  http://w3id.org/ocds/ns#milestoneDescription
+###  http://purl.org/onto-ocds/ocds#milestoneDescription
 :milestoneDescription rdf:type owl:DatatypeProperty ,
                                owl:FunctionalProperty ;
                       rdfs:domain :Milestone ;
@@ -1032,7 +1032,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                       rdfs:label "Milestone description"@en .
 
 
-###  http://w3id.org/ocds/ns#milestoneId
+###  http://purl.org/onto-ocds/ocds#milestoneId
 :milestoneId rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Milestone ;
@@ -1042,7 +1042,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:label "Milestone ID"@en .
 
 
-###  http://w3id.org/ocds/ns#milestoneStatus
+###  http://purl.org/onto-ocds/ocds#milestoneStatus
 :milestoneStatus rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :Milestone ;
@@ -1051,7 +1051,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                  rdfs:label "Milestone status"@en .
 
 
-###  http://w3id.org/ocds/ns#milestoneTitle
+###  http://purl.org/onto-ocds/ocds#milestoneTitle
 :milestoneTitle rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Milestone ;
@@ -1059,7 +1059,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                 rdfs:label "Milestone title"@en .
 
 
-###  http://w3id.org/ocds/ns#numberOfTenderers
+###  http://purl.org/onto-ocds/ocds#numberOfTenderers
 :numberOfTenderers rdf:type owl:DatatypeProperty ,
                             owl:FunctionalProperty ;
                    rdfs:domain :Tender ;
@@ -1068,7 +1068,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    rdfs:label "Number of tenders"@en .
 
 
-###  http://w3id.org/ocds/ns#ocid
+###  http://purl.org/onto-ocds/ocds#ocid
 :ocid rdf:type owl:DatatypeProperty ,
                owl:FunctionalProperty ;
       rdfs:domain :Release ;
@@ -1077,7 +1077,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
       rdfs:label "Open Contracting ID"@en .
 
 
-###  http://w3id.org/ocds/ns#organizationName
+###  http://purl.org/onto-ocds/ocds#organizationName
 :organizationName rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :Organization ;
@@ -1086,7 +1086,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   rdfs:label "Organization name"@en .
 
 
-###  http://w3id.org/ocds/ns#planningRationale
+###  http://purl.org/onto-ocds/ocds#planningRationale
 :planningRationale rdf:type owl:DatatypeProperty ,
                             owl:FunctionalProperty ;
                    rdfs:domain :Planning ;
@@ -1095,7 +1095,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    rdfs:label "Planning rationale"@en .
 
 
-###  http://w3id.org/ocds/ns#planningUrl
+###  http://purl.org/onto-ocds/ocds#planningUrl
 :planningUrl rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Planning ;
@@ -1104,7 +1104,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:label "Planning URL"@es .
 
 
-###  http://w3id.org/ocds/ns#postalCode
+###  http://purl.org/onto-ocds/ocds#postalCode
 :postalCode rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Address ;
@@ -1113,7 +1113,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
             rdfs:label "Postal code"@en .
 
 
-###  http://w3id.org/ocds/ns#procurementMethodRationale
+###  http://purl.org/onto-ocds/ocds#procurementMethodRationale
 :procurementMethodRationale rdf:type owl:DatatypeProperty ,
                                      owl:FunctionalProperty ;
                             rdfs:domain :Tender ;
@@ -1122,7 +1122,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                             rdfs:label "Procurement method rationale"@en .
 
 
-###  http://w3id.org/ocds/ns#project
+###  http://purl.org/onto-ocds/ocds#project
 :project rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Budget ;
@@ -1131,7 +1131,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
          rdfs:label "Project Title"@en .
 
 
-###  http://w3id.org/ocds/ns#projectID
+###  http://purl.org/onto-ocds/ocds#projectID
 :projectID rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Budget ;
@@ -1141,7 +1141,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Project Identifier"@en .
 
 
-###  http://w3id.org/ocds/ns#property
+###  http://purl.org/onto-ocds/ocds#property
 :property rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Change ;
@@ -1150,7 +1150,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:label "Property"@en .
 
 
-###  http://w3id.org/ocds/ns#quantity
+###  http://purl.org/onto-ocds/ocds#quantity
 :quantity rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Item ;
@@ -1159,7 +1159,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:label "quantity"@en .
 
 
-###  http://w3id.org/ocds/ns#region
+###  http://purl.org/onto-ocds/ocds#region
 :region rdf:type owl:DatatypeProperty ,
                  owl:FunctionalProperty ;
         rdfs:domain :Address ;
@@ -1168,7 +1168,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
         rdfs:label "Region"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseDate
+###  http://purl.org/onto-ocds/ocds#releaseDate
 :releaseDate rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Release ;
@@ -1177,7 +1177,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:label "Release Date" .
 
 
-###  http://w3id.org/ocds/ns#releaseLanguage
+###  http://purl.org/onto-ocds/ocds#releaseLanguage
 :releaseLanguage rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :Release ;
@@ -1186,7 +1186,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                  rdfs:label "Release language"@en .
 
 
-###  http://w3id.org/ocds/ns#startDate
+###  http://purl.org/onto-ocds/ocds#startDate
 :startDate rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Period ;
@@ -1195,7 +1195,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Start date"@en .
 
 
-###  http://w3id.org/ocds/ns#streetAddress
+###  http://purl.org/onto-ocds/ocds#streetAddress
 :streetAddress rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Address ;
@@ -1204,7 +1204,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Street address"@en .
 
 
-###  http://w3id.org/ocds/ns#submissionMethod
+###  http://purl.org/onto-ocds/ocds#submissionMethod
 :submissionMethod rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :Tender ;
@@ -1213,7 +1213,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                   rdfs:label "Submission method"@en .
 
 
-###  http://w3id.org/ocds/ns#submissionMethodDetails
+###  http://purl.org/onto-ocds/ocds#submissionMethodDetails
 :submissionMethodDetails rdf:type owl:DatatypeProperty ,
                                   owl:FunctionalProperty ;
                          rdfs:domain :Tender ;
@@ -1222,7 +1222,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                          rdfs:label "Submission method details"@en .
 
 
-###  http://w3id.org/ocds/ns#telephone
+###  http://purl.org/onto-ocds/ocds#telephone
 :telephone rdf:type owl:DatatypeProperty ;
            rdfs:domain :ContactPoint ;
            rdfs:range xsd:string ;
@@ -1230,7 +1230,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Telephone"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderDescription
+###  http://purl.org/onto-ocds/ocds#tenderDescription
 :tenderDescription rdf:type owl:DatatypeProperty ,
                             owl:FunctionalProperty ;
                    rdfs:domain :Tender ;
@@ -1238,7 +1238,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                    rdfs:label "Tender description" .
 
 
-###  http://w3id.org/ocds/ns#tenderId
+###  http://purl.org/onto-ocds/ocds#tenderId
 :tenderId rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Tender ;
@@ -1248,7 +1248,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:label "Tender ID"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderTitle
+###  http://purl.org/onto-ocds/ocds#tenderTitle
 :tenderTitle rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Tender ;
@@ -1256,7 +1256,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
              rdfs:label "Tender title"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderUrl
+###  http://purl.org/onto-ocds/ocds#tenderUrl
 :tenderUrl rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Tender ;
@@ -1265,7 +1265,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
            rdfs:label "Tender URL"@es .
 
 
-###  http://w3id.org/ocds/ns#transactionDate
+###  http://purl.org/onto-ocds/ocds#transactionDate
 :transactionDate rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :Transaction ;
@@ -1274,7 +1274,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                  rdfs:label "Transaction date"@en .
 
 
-###  http://w3id.org/ocds/ns#transactionId
+###  http://purl.org/onto-ocds/ocds#transactionId
 :transactionId rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :Transaction ;
@@ -1284,7 +1284,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
                rdfs:label "Transaction ID"@en .
 
 
-###  http://w3id.org/ocds/ns#unitName
+###  http://purl.org/onto-ocds/ocds#unitName
 :unitName rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Unit ;
@@ -1293,7 +1293,7 @@ dcterms:title rdf:type owl:AnnotationProperty .
           rdfs:label "Unit name"@en .
 
 
-###  http://w3id.org/ocds/ns#valueAmount
+###  http://purl.org/onto-ocds/ocds#valueAmount
 :valueAmount rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Value ;
@@ -1310,31 +1310,31 @@ dcterms:title rdf:type owl:AnnotationProperty .
 dcterms:URI rdf:type owl:Class .
 
 
-###  http://w3id.org/ocds/ns#Address
+###  http://purl.org/onto-ocds/ocds#Address
 :Address rdf:type owl:Class ;
          rdfs:subClassOf sch:PostalAddress ;
          rdfs:comment "An address. This may be the legally registered address of the organization, or may be a correspondence address for this particular contracting process."@en ;
          rdfs:label "Address"@en .
 
 
-###  http://w3id.org/ocds/ns#Amendment
+###  http://purl.org/onto-ocds/ocds#Amendment
 :Amendment rdf:type owl:Class ;
            rdfs:label "Amendment"@en .
 
 
-###  http://w3id.org/ocds/ns#Award
+###  http://purl.org/onto-ocds/ocds#Award
 :Award rdf:type owl:Class ;
        rdfs:comment "An award for the given procurement. There may be more than one award per contracting process e.g. because the contract is split amongst different providers, or because it is a standing offer."@en ;
        rdfs:label "Award"@en .
 
 
-###  http://w3id.org/ocds/ns#AwardCriteria
+###  http://purl.org/onto-ocds/ocds#AwardCriteria
 :AwardCriteria rdf:type owl:Class ;
                rdfs:comment "The award criteria code list describes the basis on which contract awards will be made."@en ;
                rdfs:label "Codelist Award Criteria"@en .
 
 
-###  http://w3id.org/ocds/ns#AwardStatus
+###  http://purl.org/onto-ocds/ocds#AwardStatus
 :AwardStatus rdf:type owl:Class ;
              owl:equivalentClass [ rdf:type owl:Class ;
                                    owl:oneOf ( :awardStatusActive
@@ -1347,37 +1347,37 @@ dcterms:URI rdf:type owl:Class .
              rdfs:label "Codelist Award Status"@en .
 
 
-###  http://w3id.org/ocds/ns#Budget
+###  http://purl.org/onto-ocds/ocds#Budget
 :Budget rdf:type owl:Class ;
         rdfs:comment "This section contain information about the budget line, and associated projects, through which this contracting process is funded. It draws upon data model of the [Budget Data Package](https://github.com/openspending/budget-data-package/blob/master/specification.md), and should be used to cross-reference to more detailed information held using a Budget Data Package, or, where no linked Budget Data Package is available, to provide enough information to allow a user to manually or automatically cross-reference with another published source of budget and project information."@en ;
         rdfs:label "Budget"@en .
 
 
-###  http://w3id.org/ocds/ns#Change
+###  http://purl.org/onto-ocds/ocds#Change
 :Change rdf:type owl:Class ;
         rdfs:label "Change"@en .
 
 
-###  http://w3id.org/ocds/ns#Classification
+###  http://purl.org/onto-ocds/ocds#Classification
 :Classification rdf:type owl:Class ;
                 rdfs:label "Classification"@en .
 
 
-###  http://w3id.org/ocds/ns#ContactPoint
+###  http://purl.org/onto-ocds/ocds#ContactPoint
 :ContactPoint rdf:type owl:Class ;
               rdfs:subClassOf sch:ContactPoint ;
               rdfs:comment "An person, contact point or department to contact in relation to this contracting process."@en ;
               rdfs:label "Contact point"@en .
 
 
-###  http://w3id.org/ocds/ns#Contract
+###  http://purl.org/onto-ocds/ocds#Contract
 :Contract rdf:type owl:Class ;
           rdfs:subClassOf pc:Contract ;
           rdfs:comment "Information regarding the signed contract between the buyer and supplier(s)."@en ;
           rdfs:label "Contract"@en .
 
 
-###  http://w3id.org/ocds/ns#ContractStatus
+###  http://purl.org/onto-ocds/ocds#ContractStatus
 :ContractStatus rdf:type owl:Class ;
                 owl:equivalentClass [ rdf:type owl:Class ;
                                       owl:oneOf ( :contractStatusActive
@@ -1390,31 +1390,31 @@ dcterms:URI rdf:type owl:Class .
                 rdfs:label "Codelist Contract Status"@en .
 
 
-###  http://w3id.org/ocds/ns#Document
+###  http://purl.org/onto-ocds/ocds#Document
 :Document rdf:type owl:Class ;
           rdfs:subClassOf foaf:Document ;
           rdfs:comment "Links to, or descriptions of, external documents can be attached at various locations within the standard. Documents may be supporting information, formal notices, downloadable forms, or any other kind of resource that should be made public as part of full open contracting."@en ;
           rdfs:label "Document"@en .
 
 
-###  http://w3id.org/ocds/ns#DocumentType
+###  http://purl.org/onto-ocds/ocds#DocumentType
 :DocumentType rdf:type owl:Class ;
               rdfs:comment "This list provides details of the documents that publishers may wish to provide at various points their contracting process."@en ;
               rdfs:label "Codelist Document Type"@en .
 
 
-###  http://w3id.org/ocds/ns#Identifier
+###  http://purl.org/onto-ocds/ocds#Identifier
 :Identifier rdf:type owl:Class ;
             rdfs:label "Identifier"@en .
 
 
-###  http://w3id.org/ocds/ns#Implementation
+###  http://purl.org/onto-ocds/ocds#Implementation
 :Implementation rdf:type owl:Class ;
                 rdfs:comment "Information during the performance / implementation stage of the contract."@en ;
                 rdfs:label "Implementation" .
 
 
-###  http://w3id.org/ocds/ns#InitiationType
+###  http://purl.org/onto-ocds/ocds#InitiationType
 :InitiationType rdf:type owl:Class ;
                 owl:equivalentClass [ rdf:type owl:Class ;
                                       owl:oneOf ( :initiationTypeTender
@@ -1424,24 +1424,24 @@ dcterms:URI rdf:type owl:Class .
                 rdfs:label "Codelist Initiation Type"@en .
 
 
-###  http://w3id.org/ocds/ns#Item
+###  http://purl.org/onto-ocds/ocds#Item
 :Item rdf:type owl:Class ;
       rdfs:subClassOf gr:Offering ;
       rdfs:comment "A good, service, or work to be contracted."@en ;
       rdfs:label "Item"@en .
 
 
-###  http://w3id.org/ocds/ns#ItemClassificationScheme
+###  http://purl.org/onto-ocds/ocds#ItemClassificationScheme
 :ItemClassificationScheme rdf:type owl:Class .
 
 
-###  http://w3id.org/ocds/ns#Lot
+###  http://purl.org/onto-ocds/ocds#Lot
 :Lot rdf:type owl:Class ;
      rdfs:comment "Es una conexión de uno o más ítems"@es ;
      rdfs:label "Lote"@es .
 
 
-###  http://w3id.org/ocds/ns#Method
+###  http://purl.org/onto-ocds/ocds#Method
 :Method rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Class ;
                               owl:oneOf ( :methodLimited
@@ -1453,41 +1453,41 @@ dcterms:URI rdf:type owl:Class .
         rdfs:label "Codelist Method"@en .
 
 
-###  http://w3id.org/ocds/ns#Milestone
+###  http://purl.org/onto-ocds/ocds#Milestone
 :Milestone rdf:type owl:Class ;
            rdfs:label "Milestone"@en .
 
 
-###  http://w3id.org/ocds/ns#Organization
+###  http://purl.org/onto-ocds/ocds#Organization
 :Organization rdf:type owl:Class ;
               owl:equivalentClass gr:BusinessEntity ;
               rdfs:comment "An organization."@en ;
               rdfs:label "Organization"@en .
 
 
-###  http://w3id.org/ocds/ns#OrganizationIdentifierScheme
+###  http://purl.org/onto-ocds/ocds#OrganizationIdentifierScheme
 :OrganizationIdentifierScheme rdf:type owl:Class ;
                               rdfs:comment "The Organization Identifier Scheme currently uses the codes from the International Aid Transparency Initiative ‘Organisation Registration Agency’ codelist. See the identifiers section for more information on organization identifiers."@en ;
                               rdfs:label "Codelist Organization Identifier Scheme"@en .
 
 
-###  http://w3id.org/ocds/ns#Period
+###  http://purl.org/onto-ocds/ocds#Period
 :Period rdf:type owl:Class ;
         rdfs:label "Period"@en .
 
 
-###  http://w3id.org/ocds/ns#Planning
+###  http://purl.org/onto-ocds/ocds#Planning
 :Planning rdf:type owl:Class ;
           rdfs:comment "nformation from the planning phase of the contracting process. Note that many other fields may be filled in a planning release, in the appropriate fields in other schema sections, these would likely be estimates at this stage e.g. totalValue in tender"@en ;
           rdfs:label "Planning"@en .
 
 
-###  http://w3id.org/ocds/ns#Release
+###  http://purl.org/onto-ocds/ocds#Release
 :Release rdf:type owl:Class ;
          rdfs:label "Open Contracting Release"@en .
 
 
-###  http://w3id.org/ocds/ns#ReleaseTag
+###  http://purl.org/onto-ocds/ocds#ReleaseTag
 :ReleaseTag rdf:type owl:Class ;
             owl:equivalentClass [ rdf:type owl:Class ;
                                   owl:oneOf ( :releaseTagAward
@@ -1511,20 +1511,20 @@ dcterms:URI rdf:type owl:Class .
             rdfs:label "Codelist ReleaseTag"@en .
 
 
-###  http://w3id.org/ocds/ns#SubmissionMethod
+###  http://purl.org/onto-ocds/ocds#SubmissionMethod
 :SubmissionMethod rdf:type owl:Class ;
                   rdfs:comment "The submission method codelist is used to identify the mechanism through which a submission may be made."@en ;
                   rdfs:label "Codelist Submission Method"@en .
 
 
-###  http://w3id.org/ocds/ns#Tender
+###  http://purl.org/onto-ocds/ocds#Tender
 :Tender rdf:type owl:Class ;
         rdfs:subClassOf pc:Tender ;
         rdfs:comment "Data regarding tender process - publicly inviting prospective contractors to submit bids for evaluation and selecting a winner or winners"@en ;
         rdfs:label "Tender"@en .
 
 
-###  http://w3id.org/ocds/ns#TenderStatus
+###  http://purl.org/onto-ocds/ocds#TenderStatus
 :TenderStatus rdf:type owl:Class ;
               owl:equivalentClass [ rdf:type owl:Class ;
                                     owl:oneOf ( :tenderStatusActive
@@ -1538,18 +1538,18 @@ dcterms:URI rdf:type owl:Class .
               rdfs:label "Codelist Tender Status"@en .
 
 
-###  http://w3id.org/ocds/ns#Transaction
+###  http://purl.org/onto-ocds/ocds#Transaction
 :Transaction rdf:type owl:Class ;
              rdfs:comment "A spending transaction related to the contracting process. Draws upon the data models of the [Budget Data Package](https://github.com/openspending/budget-data-package/blob/master/specification.md) and the [International Aid Transpareny Initiative](http://iatistandard.org/activity-standard/iati-activities/iati-activity/transaction/) and should be used to cross-reference to more detailed information held using a Budget Data Package, IATI file, or to provide enough information to allow a user to manually or automatically cross-reference with some other published source of transactional spending data."@en ;
              rdfs:label "Transaction Information"@en .
 
 
-###  http://w3id.org/ocds/ns#Unit
+###  http://purl.org/onto-ocds/ocds#Unit
 :Unit rdf:type owl:Class ;
       rdfs:label "Unit"@en .
 
 
-###  http://w3id.org/ocds/ns#Value
+###  http://purl.org/onto-ocds/ocds#Value
 :Value rdf:type owl:Class ;
        owl:equivalentClass gr:PriceSpecification ;
        rdfs:label "Value"@en .
@@ -1563,35 +1563,35 @@ rdfs:Resource rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  http://w3id.org/ocds/ns#awardCriteriaBestProposal
+###  http://purl.org/onto-ocds/ocds#awardCriteriaBestProposal
 :awardCriteriaBestProposal rdf:type owl:NamedIndividual ,
                                     :AwardCriteria ;
                            dcterms:title "Best Proposal Cost"@en ;
                            rdfs:label "bestProposal"@en .
 
 
-###  http://w3id.org/ocds/ns#awardCriteriaBestValueToGovernment
+###  http://purl.org/onto-ocds/ocds#awardCriteriaBestValueToGovernment
 :awardCriteriaBestValueToGovernment rdf:type owl:NamedIndividual ,
                                              :AwardCriteria ;
                                     dcterms:title "Best Value to Government"@en ;
                                     rdfs:label "bestValueToGovernment"@en .
 
 
-###  http://w3id.org/ocds/ns#awardCriteriaLowestCost
+###  http://purl.org/onto-ocds/ocds#awardCriteriaLowestCost
 :awardCriteriaLowestCost rdf:type owl:NamedIndividual ,
                                   :AwardCriteria ;
                          dcterms:title "Lowest Cost"@en ;
                          rdfs:label "lowestCost"@en .
 
 
-###  http://w3id.org/ocds/ns#awardCriteriaSingleBidOnly
+###  http://purl.org/onto-ocds/ocds#awardCriteriaSingleBidOnly
 :awardCriteriaSingleBidOnly rdf:type owl:NamedIndividual ,
                                      :AwardCriteria ;
                             dcterms:title "Single Bid Only"@en ;
                             rdfs:label "singleBidOnly"@en .
 
 
-###  http://w3id.org/ocds/ns#awardStatusActive
+###  http://purl.org/onto-ocds/ocds#awardStatusActive
 :awardStatusActive rdf:type owl:NamedIndividual ,
                             :AwardStatus ;
                    dcterms:title "Active"@en ;
@@ -1599,7 +1599,7 @@ rdfs:Resource rdf:type owl:Class .
                    rdfs:label "active"@en .
 
 
-###  http://w3id.org/ocds/ns#awardStatusCancelled
+###  http://purl.org/onto-ocds/ocds#awardStatusCancelled
 :awardStatusCancelled rdf:type owl:NamedIndividual ,
                                :AwardStatus ;
                       dcterms:title "Cancelled"@en ;
@@ -1607,7 +1607,7 @@ rdfs:Resource rdf:type owl:Class .
                       rdfs:label "cancelled"@en .
 
 
-###  http://w3id.org/ocds/ns#awardStatusPending
+###  http://purl.org/onto-ocds/ocds#awardStatusPending
 :awardStatusPending rdf:type owl:NamedIndividual ,
                              :AwardStatus ;
                     dcterms:title "Pending"@en ;
@@ -1615,7 +1615,7 @@ rdfs:Resource rdf:type owl:Class .
                     rdfs:label "pending"@en .
 
 
-###  http://w3id.org/ocds/ns#awardStatusUnsuccessful
+###  http://purl.org/onto-ocds/ocds#awardStatusUnsuccessful
 :awardStatusUnsuccessful rdf:type owl:NamedIndividual ,
                                   :AwardStatus ;
                          dcterms:title "Unsuccessful"@en ;
@@ -1623,7 +1623,7 @@ rdfs:Resource rdf:type owl:Class .
                          rdfs:label "unsuccessful"@en .
 
 
-###  http://w3id.org/ocds/ns#contractStatusActive
+###  http://purl.org/onto-ocds/ocds#contractStatusActive
 :contractStatusActive rdf:type owl:NamedIndividual ,
                                :ContractStatus ;
                       dcterms:title "Active"@en ;
@@ -1631,7 +1631,7 @@ rdfs:Resource rdf:type owl:Class .
                       rdfs:label "active"@en .
 
 
-###  http://w3id.org/ocds/ns#contractStatusCancelled
+###  http://purl.org/onto-ocds/ocds#contractStatusCancelled
 :contractStatusCancelled rdf:type owl:NamedIndividual ,
                                   :ContractStatus ;
                          dcterms:title "Cancelled"@en ;
@@ -1639,7 +1639,7 @@ rdfs:Resource rdf:type owl:Class .
                          rdfs:label "cancelled"@en .
 
 
-###  http://w3id.org/ocds/ns#contractStatusPending
+###  http://purl.org/onto-ocds/ocds#contractStatusPending
 :contractStatusPending rdf:type owl:NamedIndividual ,
                                 :ContractStatus ;
                        dcterms:title "Pending"@en ;
@@ -1647,7 +1647,7 @@ rdfs:Resource rdf:type owl:Class .
                        rdfs:label "pending"@en .
 
 
-###  http://w3id.org/ocds/ns#contractStatusTerminated
+###  http://purl.org/onto-ocds/ocds#contractStatusTerminated
 :contractStatusTerminated rdf:type owl:NamedIndividual ,
                                    :ContractStatus ;
                           dcterms:title "Terminated"@en ;
@@ -1655,7 +1655,7 @@ rdfs:Resource rdf:type owl:Class .
                           rdfs:label "terminated"@en .
 
 
-###  http://w3id.org/ocds/ns#documentTypeAwardNotice
+###  http://purl.org/onto-ocds/ocds#documentTypeAwardNotice
 :documentTypeAwardNotice rdf:type owl:NamedIndividual ,
                                   :DocumentType ;
                          dcterms:title "Award Notice"@en ;
@@ -1663,7 +1663,7 @@ rdfs:Resource rdf:type owl:Class .
                          rdfs:label "awardNotice"@en .
 
 
-###  http://w3id.org/ocds/ns#documentTypeTenderNotice
+###  http://purl.org/onto-ocds/ocds#documentTypeTenderNotice
 :documentTypeTenderNotice rdf:type owl:NamedIndividual ,
                                    :DocumentType ;
                           dcterms:title "Tender Notice"@en ;
@@ -1671,7 +1671,7 @@ rdfs:Resource rdf:type owl:Class .
                           rdfs:label "tenderNotice"@en .
 
 
-###  http://w3id.org/ocds/ns#ics_CPV
+###  http://purl.org/onto-ocds/ocds#ics_CPV
 :ics_CPV rdf:type owl:NamedIndividual ,
                   :ItemClassificationScheme ;
          dcterms:title "EC Common Procurement Vocabulary"@en ;
@@ -1679,7 +1679,7 @@ rdfs:Resource rdf:type owl:Class .
          rdfs:label "CPV"@en .
 
 
-###  http://w3id.org/ocds/ns#ics_CPVS
+###  http://purl.org/onto-ocds/ocds#ics_CPVS
 :ics_CPVS rdf:type owl:NamedIndividual ,
                    :ItemClassificationScheme ;
           dcterms:title "EC Common Procurement Vocabulary - Supplementary Codelists"@en ;
@@ -1687,7 +1687,7 @@ rdfs:Resource rdf:type owl:Class .
           rdfs:label "CPVS"@en .
 
 
-###  http://w3id.org/ocds/ns#ics_GSIN
+###  http://purl.org/onto-ocds/ocds#ics_GSIN
 :ics_GSIN rdf:type owl:NamedIndividual ,
                    :ItemClassificationScheme ;
           dcterms:title "Goods and Services Identification Number"@en ;
@@ -1695,7 +1695,7 @@ rdfs:Resource rdf:type owl:Class .
           rdfs:label "GSIN"@en .
 
 
-###  http://w3id.org/ocds/ns#ics_UNSPSC
+###  http://purl.org/onto-ocds/ocds#ics_UNSPSC
 :ics_UNSPSC rdf:type owl:NamedIndividual ,
                      :ItemClassificationScheme ;
             dcterms:title "United Nations Standard Products and Services Code®"@en ;
@@ -1703,7 +1703,7 @@ rdfs:Resource rdf:type owl:Class .
             rdfs:label "UNSPSC"@en .
 
 
-###  http://w3id.org/ocds/ns#initiationTypeTender
+###  http://purl.org/onto-ocds/ocds#initiationTypeTender
 :initiationTypeTender rdf:type owl:NamedIndividual ,
                                :InitiationType ;
                       dcterms:title "Tender"@en ;
@@ -1711,7 +1711,7 @@ rdfs:Resource rdf:type owl:Class .
                       rdfs:label "tender"@en .
 
 
-###  http://w3id.org/ocds/ns#methodLimited
+###  http://purl.org/onto-ocds/ocds#methodLimited
 :methodLimited rdf:type owl:NamedIndividual ,
                         :Method ;
                dcterms:title "Limited"@en ;
@@ -1719,7 +1719,7 @@ rdfs:Resource rdf:type owl:Class .
                rdfs:label "limited"@en .
 
 
-###  http://w3id.org/ocds/ns#methodOpen
+###  http://purl.org/onto-ocds/ocds#methodOpen
 :methodOpen rdf:type owl:NamedIndividual ,
                      :Method ;
             dcterms:title "Open"@en ;
@@ -1727,7 +1727,7 @@ rdfs:Resource rdf:type owl:Class .
             rdfs:label "open"@en .
 
 
-###  http://w3id.org/ocds/ns#methodSelective
+###  http://purl.org/onto-ocds/ocds#methodSelective
 :methodSelective rdf:type owl:NamedIndividual ,
                           :Method ;
                  dcterms:title "Selective"@en ;
@@ -1735,7 +1735,7 @@ rdfs:Resource rdf:type owl:Class .
                  rdfs:label "selective"@en .
 
 
-###  http://w3id.org/ocds/ns#ois_AF-CBR
+###  http://purl.org/onto-ocds/ocds#ois_AF-CBR
 :ois_AF-CBR rdf:type owl:NamedIndividual ,
                      :OrganizationIdentifierScheme ;
             dcterms:title "Afghanistan Central Business Registry"@en ;
@@ -1743,7 +1743,7 @@ rdfs:Resource rdf:type owl:Class .
             rdfs:label "AF-CBR"@en .
 
 
-###  http://w3id.org/ocds/ns#ois_AF-MOE
+###  http://purl.org/onto-ocds/ocds#ois_AF-MOE
 :ois_AF-MOE rdf:type owl:NamedIndividual ,
                      :OrganizationIdentifierScheme ;
             dcterms:title "Ministry of Economy"@en ;
@@ -1751,28 +1751,28 @@ rdfs:Resource rdf:type owl:Class .
             rdfs:label "AF-MOE"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagAward
+###  http://purl.org/onto-ocds/ocds#releaseTagAward
 :releaseTagAward rdf:type owl:NamedIndividual ,
                           :ReleaseTag ;
                  dcterms:title "Award"@en ;
                  rdfs:label "award"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagAwardCancellation
+###  http://purl.org/onto-ocds/ocds#releaseTagAwardCancellation
 :releaseTagAwardCancellation rdf:type owl:NamedIndividual ,
                                       :ReleaseTag ;
                              dcterms:title "Award Cancellation"@en ;
                              rdfs:label "awardCancellation"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagAwardUpdate
+###  http://purl.org/onto-ocds/ocds#releaseTagAwardUpdate
 :releaseTagAwardUpdate rdf:type owl:NamedIndividual ,
                                 :ReleaseTag ;
                        dcterms:title "Award Update"@en ;
                        rdfs:label "awardUpdate"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagCompiled
+###  http://purl.org/onto-ocds/ocds#releaseTagCompiled
 :releaseTagCompiled rdf:type owl:NamedIndividual ,
                              :ReleaseTag ;
                     dcterms:title "Compiled Record"@en ;
@@ -1780,56 +1780,56 @@ rdfs:Resource rdf:type owl:Class .
                     rdfs:label "compiled"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagContract
+###  http://purl.org/onto-ocds/ocds#releaseTagContract
 :releaseTagContract rdf:type owl:NamedIndividual ,
                              :ReleaseTag ;
                     dcterms:title "Contract"@en ;
                     rdfs:label "contract"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagContractAmendment
+###  http://purl.org/onto-ocds/ocds#releaseTagContractAmendment
 :releaseTagContractAmendment rdf:type owl:NamedIndividual ,
                                       :ReleaseTag ;
                              dcterms:title "Contract Amendment"@en ;
                              rdfs:label "contractAmendment"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagContractTermination
+###  http://purl.org/onto-ocds/ocds#releaseTagContractTermination
 :releaseTagContractTermination rdf:type owl:NamedIndividual ,
                                         :ReleaseTag ;
                                dcterms:title "Contract Termination"@en ;
                                rdfs:label "contractTermination"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagContractUpdate
+###  http://purl.org/onto-ocds/ocds#releaseTagContractUpdate
 :releaseTagContractUpdate rdf:type owl:NamedIndividual ,
                                    :ReleaseTag ;
                           dcterms:title "Contract Update"@en ;
                           rdfs:label "contractUpdate"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagImplementation
+###  http://purl.org/onto-ocds/ocds#releaseTagImplementation
 :releaseTagImplementation rdf:type owl:NamedIndividual ,
                                    :ReleaseTag ;
                           dcterms:title "Implementation"@en ;
                           rdfs:label "implementation"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagImplementationUpdate
+###  http://purl.org/onto-ocds/ocds#releaseTagImplementationUpdate
 :releaseTagImplementationUpdate rdf:type owl:NamedIndividual ,
                                          :ReleaseTag ;
                                 dcterms:title "Implementation Update"@en ;
                                 rdfs:label "implementationUpdate"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagPlanning
+###  http://purl.org/onto-ocds/ocds#releaseTagPlanning
 :releaseTagPlanning rdf:type owl:NamedIndividual ,
                              :ReleaseTag ;
                     dcterms:title "Planning"@en ;
                     rdfs:label "planning"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagTender
+###  http://purl.org/onto-ocds/ocds#releaseTagTender
 :releaseTagTender rdf:type owl:NamedIndividual ,
                            :ReleaseTag ;
                   dcterms:title "Tender"@en ;
@@ -1837,7 +1837,7 @@ rdfs:Resource rdf:type owl:Class .
                   rdfs:label "tender"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagTenderAmendment
+###  http://purl.org/onto-ocds/ocds#releaseTagTenderAmendment
 :releaseTagTenderAmendment rdf:type owl:NamedIndividual ,
                                     :ReleaseTag ;
                            dcterms:title "Tender Amendment"@en ;
@@ -1845,14 +1845,14 @@ rdfs:Resource rdf:type owl:Class .
                            rdfs:label "tenderAmendment"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagTenderCancellation
+###  http://purl.org/onto-ocds/ocds#releaseTagTenderCancellation
 :releaseTagTenderCancellation rdf:type owl:NamedIndividual ,
                                        :ReleaseTag ;
                               dcterms:title "Tender Cancellation"@en ;
                               rdfs:label "tenderCancellation"@en .
 
 
-###  http://w3id.org/ocds/ns#releaseTagTenderUpdate
+###  http://purl.org/onto-ocds/ocds#releaseTagTenderUpdate
 :releaseTagTenderUpdate rdf:type owl:NamedIndividual ,
                                  :ReleaseTag ;
                         dcterms:title "Tender Update"@en ;
@@ -1860,35 +1860,35 @@ rdfs:Resource rdf:type owl:Class .
                         rdfs:label "tenderUpdate"@en .
 
 
-###  http://w3id.org/ocds/ns#submissionMethodElectronicAuction
+###  http://purl.org/onto-ocds/ocds#submissionMethodElectronicAuction
 :submissionMethodElectronicAuction rdf:type owl:NamedIndividual ,
                                             :SubmissionMethod ;
                                    dcterms:title "Electronic Auction"@en ;
                                    rdfs:label "electronicAuction"@en .
 
 
-###  http://w3id.org/ocds/ns#submissionMethodElectronicSubmission
+###  http://purl.org/onto-ocds/ocds#submissionMethodElectronicSubmission
 :submissionMethodElectronicSubmission rdf:type owl:NamedIndividual ,
                                                :SubmissionMethod ;
                                       dcterms:title "Electronic Submission"@en ;
                                       rdfs:label "electronicSubmission"@en .
 
 
-###  http://w3id.org/ocds/ns#submissionMethodInPerson
+###  http://purl.org/onto-ocds/ocds#submissionMethodInPerson
 :submissionMethodInPerson rdf:type owl:NamedIndividual ,
                                    :SubmissionMethod ;
                           dcterms:title "In Person"@en ;
                           rdfs:label "inPerson"@en .
 
 
-###  http://w3id.org/ocds/ns#submissionMethodWritten
+###  http://purl.org/onto-ocds/ocds#submissionMethodWritten
 :submissionMethodWritten rdf:type owl:NamedIndividual ,
                                   :SubmissionMethod ;
                          dcterms:title "Written"@en ;
                          rdfs:label "written"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderStatusActive
+###  http://purl.org/onto-ocds/ocds#tenderStatusActive
 :tenderStatusActive rdf:type owl:NamedIndividual ,
                              :TenderStatus ;
                     dcterms:title "Active"@en ;
@@ -1896,7 +1896,7 @@ rdfs:Resource rdf:type owl:Class .
                     rdfs:label "active"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderStatusCancelled
+###  http://purl.org/onto-ocds/ocds#tenderStatusCancelled
 :tenderStatusCancelled rdf:type owl:NamedIndividual ,
                                 :TenderStatus ;
                        dcterms:title "Cancelled"@en ;
@@ -1904,7 +1904,7 @@ rdfs:Resource rdf:type owl:Class .
                        rdfs:label "cancelled"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderStatusComplete
+###  http://purl.org/onto-ocds/ocds#tenderStatusComplete
 :tenderStatusComplete rdf:type owl:NamedIndividual ,
                                :TenderStatus ;
                       dcterms:title "Complete"@en ;
@@ -1912,7 +1912,7 @@ rdfs:Resource rdf:type owl:Class .
                       rdfs:label "complete"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderStatusPlanned
+###  http://purl.org/onto-ocds/ocds#tenderStatusPlanned
 :tenderStatusPlanned rdf:type owl:NamedIndividual ,
                               :TenderStatus ;
                      dcterms:title "Planned"@en ;
@@ -1920,7 +1920,7 @@ rdfs:Resource rdf:type owl:Class .
                      rdfs:label "planned"@en .
 
 
-###  http://w3id.org/ocds/ns#tenderStatusUnsuccessful
+###  http://purl.org/onto-ocds/ocds#tenderStatusUnsuccessful
 :tenderStatusUnsuccessful rdf:type owl:NamedIndividual ,
                                    :TenderStatus ;
                           dcterms:title "Unsuccessful"@en ;

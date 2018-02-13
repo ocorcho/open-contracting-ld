@@ -1,14 +1,14 @@
 {
   "@context": {
     "Period": {
-      "@id": "http://w3id.org/ocds/ns##Period"
+      "@id": "http://purl.org/onto-ocds/ocds#Period"
     },
     "startDate": {
-      "@id": "http://w3id.org/ocds/ns##startDate",
+      "@id": "http://purl.org/onto-ocds/ocds#startDate",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "endDate": {
-      "@id": "http://w3id.org/ocds/ns##endDate",
+      "@id": "http://purl.org/onto-ocds/ocds#endDate",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     }
   }

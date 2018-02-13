@@ -1,30 +1,30 @@
 {
   "@context": {
     "Organization": {
-      "@id": "http://w3id.org/ocds/ns##Organization"
+      "@id": "http://purl.org/onto-ocds/ocds#Organization"
     },
     "name": {
-      "@id": "http://w3id.org/ocds/ns##organizationName",
+      "@id": "http://purl.org/onto-ocds/ocds#organizationName",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "id": {
-      "@id": "http://w3id.org/ocds/ns##identifier",
+      "@id": "http://purl.org/onto-ocds/ocds#identifier",
       "@type": "@id"
     },
     "contactPoint": {
-      "@id": "http://w3id.org/ocds/ns##contactPoint",
+      "@id": "http://purl.org/onto-ocds/ocds#contactPoint",
       "@type": "@id"
     },
      "address": {
-      "@id" : "http://w3id.org/ocds/ns##address",
+      "@id" : "http://purl.org/onto-ocds/ocds#address",
       "@type" : "@id"
     },
      "identifier": {
-      "@id": "http://w3id.org/ocds/ns##identifier",
+      "@id": "http://purl.org/onto-ocds/ocds#identifier",
       "@type": "@id"
     },
     "identifiers": {
-      "@id": "http://w3id.org/ocds/ns##additionalIdentifiers",
+      "@id": "http://purl.org/onto-ocds/ocds#additionalIdentifiers",
       "@type": "@id"
     }
   }

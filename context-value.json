@@ -1,13 +1,13 @@
 {"@context": {
         "Value": {
-          "@id": "http://w3id.org/ocds/ns##Value"
+          "@id": "http://purl.org/onto-ocds/ocds#Value"
         },
         "currency": {
-          "@id": "http://w3id.org/ocds/ns##currency",
+          "@id": "http://purl.org/onto-ocds/ocds#currency",
           "@type": "http://www.w3.org/2001/XMLSchema#string"
         },
         "amount": {
-          "@id": "http://w3id.org/ocds/ns##valueAmount",
+          "@id": "http://purl.org/onto-ocds/ocds#valueAmount",
           "@type": "http://www.w3.org/2001/XMLSchema#integer"
         }
       }

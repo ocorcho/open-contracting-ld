@@ -1,21 +1,21 @@
 {
   "@context": {
     "Classification": {
-      "@id": "http://w3id.org/ocds/ns#Classification"
+      "@id": "http://purl.org/onto-ocds/ocds#Classification"
     },
     "id" : {
-      "@id" : "http://w3id.org/ocds/ns##classificationId"
+      "@id" : "http://purl.org/onto-ocds/ocds#classificationId"
     },
     "description" : {
-      "@id" : "http://w3id.org/ocds/ns##classificationDescription",
+      "@id" : "http://purl.org/onto-ocds/ocds#classificationDescription",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "scheme" : {
-      "@id" : "http://w3id.org/ocds/ns##classificationScheme",
+      "@id" : "http://purl.org/onto-ocds/ocds#classificationScheme",
       "@type" : "@id"
     },
     "uri" : {
-      "@id" : "http://w3id.org/ocds/ns##classificationUri",
+      "@id" : "http://purl.org/onto-ocds/ocds#classificationUri",
       "@type" : "@id"
     }
   }

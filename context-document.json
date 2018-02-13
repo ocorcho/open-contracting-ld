@@ -1,37 +1,37 @@
 {
   "@context": {
     "Document": {
-      "@id": "http://w3id.org/ocds/ns##Document"
+      "@id": "http://purl.org/onto-ocds/ocds#Document"
     },
     "documentType" : {
-      "@id" : "http://w3id.org/ocds/ns##documentType",
+      "@id" : "http://purl.org/onto-ocds/ocds#documentType",
       "@type" : "@id"
     },
     "url" : {
-      "@id" : "http://w3id.org/ocds/ns##documentUrl",
+      "@id" : "http://purl.org/onto-ocds/ocds#documentUrl",
       "@type" : "@id"
     },
     "id" : {
-      "@id" : "http://w3id.org/ocds/ns##documentId"
+      "@id" : "http://purl.org/onto-ocds/ocds#documentId"
     },
     "title" : {
-      "@id" : "http://w3id.org/ocds/ns##documentTitle",
+      "@id" : "http://purl.org/onto-ocds/ocds#documentTitle",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "dateModified" : {
-      "@id" : "http://w3id.org/ocds/ns##documentDateModified",
+      "@id" : "http://purl.org/onto-ocds/ocds#documentDateModified",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "language" : {
-      "@id" : "http://w3id.org/ocds/ns##documentLanguage",
+      "@id" : "http://purl.org/onto-ocds/ocds#documentLanguage",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "description" : {
-      "@id" : "http://w3id.org/ocds/ns##documentDescription",
+      "@id" : "http://purl.org/onto-ocds/ocds#documentDescription",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "format" : {
-      "@id" : "http://w3id.org/ocds/ns##format",
+      "@id" : "http://purl.org/onto-ocds/ocds#format",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     }
   }

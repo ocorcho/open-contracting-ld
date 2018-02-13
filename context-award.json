@@ -1,52 +1,52 @@
 {"@context": {
 
    "Award" : {
-      "@id" : "http://w3id.org/ocds/ns##Award"
+      "@id" : "http://purl.org/onto-ocds/ocds#Award"
     },
         
     "id" : {
-      "@id" : "http://w3id.org/ocds/ns##awardID",
+      "@id" : "http://purl.org/onto-ocds/ocds#awardID",
       "@type" : "@id"
     },
     "title" : {
-      "@id" : "http://w3id.org/ocds/ns##awardTitle",
+      "@id" : "http://purl.org/onto-ocds/ocds#awardTitle",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
 
     "status" : {
-      "@id" : "http://w3id.org/ocds/ns##awardStatus",
+      "@id" : "http://purl.org/onto-ocds/ocds#awardStatus",
       "@type" : "@id"
     },
 
     "date" : {
-      "@id" : "http://w3id.org/ocds/ns##awardDate",
+      "@id" : "http://purl.org/onto-ocds/ocds#awardDate",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
 
      "value" : {
-      "@id" : "http://w3id.org/ocds/ns##awardValue",
+      "@id" : "http://purl.org/onto-ocds/ocds#awardValue",
       "@type" : "@id"
     },
 
     "suppliers" : {
-      "@id" : "http://w3id.org/ocds/ns##suppliers",
+      "@id" : "http://purl.org/onto-ocds/ocds#suppliers",
       "@type" : "@id"
     },
     "description" : {
-      "@id" : "http://w3id.org/ocds/ns##awardDescription",
+      "@id" : "http://purl.org/onto-ocds/ocds#awardDescription",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "amendment" : {
-      "@id" : "http://w3id.org/ocds/ns##awardAmendment",
+      "@id" : "http://purl.org/onto-ocds/ocds#awardAmendment",
       "@type" : "@id"
     },
      "documents" : {
-      "@id" : "http://w3id.org/ocds/ns##awardDocuments",
+      "@id" : "http://purl.org/onto-ocds/ocds#awardDocuments",
       "@type" : "@id"
     },
 
      "url" : {
-      "@id" : "http://w3id.org/ocds/ns##awardURL",
+      "@id" : "http://purl.org/onto-ocds/ocds#awardURL",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     }
 

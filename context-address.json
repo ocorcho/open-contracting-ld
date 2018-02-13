@@ -1,28 +1,28 @@
 {
   "@context": {   
     "Address" : {
-      "@id" : "http://w3id.org/ocds/ns##Address",
+      "@id" : "http://purl.org/onto-ocds/ocds#Address",
         "@type" : "@id"
     },
    "streetAddress" : {
-      "@id" : "http://w3id.org/ocds/ns##streetAddress",
+      "@id" : "http://purl.org/onto-ocds/ocds#streetAddress",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
   "postalCode" : {
-      "@id" : "http://w3id.org/ocds/ns##postalCode",
+      "@id" : "http://purl.org/onto-ocds/ocds#postalCode",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
      "locality" : {
-      "@id" : "http://w3id.org/ocds/ns##locality",
+      "@id" : "http://purl.org/onto-ocds/ocds#locality",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
    "countryName" : {
-      "@id" : "http://w3id.org/ocds/ns##countryName",
+      "@id" : "http://purl.org/onto-ocds/ocds#countryName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
 
     "region" : {
-      "@id" : "http://w3id.org/ocds/ns##region",
+      "@id" : "http://purl.org/onto-ocds/ocds#region",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     }
   }

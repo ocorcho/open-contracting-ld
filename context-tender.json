@@ -1,61 +1,61 @@
 {
   "@context": {
     "Tender": {
-      "@id": "http://w3id.org/ocds/ns##Tender"
+      "@id": "http://purl.org/onto-ocds/ocds#Tender"
     },
     "id" : {
-      "@id" : "http://w3id.org/ocds/ns##tenderId"
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderId"
     },
     "title": {
-      "@id": "http://w3id.org/ocds/ns##tenderTitle",
+      "@id": "http://purl.org/onto-ocds/ocds#tenderTitle",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "status": {
-      "@id": "http://w3id.org/ocds/ns##tenderStatus",
+      "@id": "http://purl.org/onto-ocds/ocds#tenderStatus",
       "@type" : "@id"
     },
     "lots" : {
-      "@id" : "http://w3id.org/ocds/ns##tenderLots",
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderLots",
       "@type" : "@id"
     },
     "items" : {
-      "@id" : "http://w3id.org/ocds/ns##tenderItems",
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderItems",
       "@type" : "@id"
     },
     "value" : {
-      "@id" : "http://w3id.org/ocds/ns##tenderValue",
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderValue",
       "@type" : "@id"
     },
     "enquiryPeriod" : {
-      "@id" : "http://w3id.org/ocds/ns##enquiryPeriod",
+      "@id" : "http://purl.org/onto-ocds/ocds#enquiryPeriod",
       "@type" : "@id"
     },
     "hasEnquiries" : {
-      "@id" : "http://w3id.org/ocds/ns##hasEnquiries",
+      "@id" : "http://purl.org/onto-ocds/ocds#hasEnquiries",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "awardPeriod" : {
-      "@id" : "http://w3id.org/ocds/ns##awardPeriod",
+      "@id" : "http://purl.org/onto-ocds/ocds#awardPeriod",
       "@type" : "@id"
     },
     "procuringEntity" : {
-      "@id" : "http://w3id.org/ocds/ns##procuringEntity",
+      "@id" : "http://purl.org/onto-ocds/ocds#procuringEntity",
       "@type" : "@id"
     },
     "documents" : {
-      "@id" : "http://w3id.org/ocds/ns##tenderDocuments",
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderDocuments",
       "@type" : "@id"
     },
     "tenderPeriod" : {
-      "@id" : "http://w3id.org/ocds/ns##tenderPeriod",
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderPeriod",
       "@type" : "@id"
     },
     "submissionMethod" : {
-      "@id" : "http://w3id.org/ocds/ns##submissionMethod",
+      "@id" : "http://purl.org/onto-ocds/ocds#submissionMethod",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "url" : {
-      "@id" : "http://w3id.org/ocds/ns##tenderUrl",
+      "@id" : "http://purl.org/onto-ocds/ocds#tenderUrl",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     }
   }

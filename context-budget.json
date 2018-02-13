@@ -2,14 +2,14 @@
   "@context": {
     
     "Budget": {
-      "@id": "http://w3id.org/ocds/ns##Budget"
+      "@id": "http://purl.org/onto-ocds/ocds#Budget"
     },
     "amount": {
-      "@id": "http://w3id.org/ocds/ns##budgetAmount",
+      "@id": "http://purl.org/onto-ocds/ocds#budgetAmount",
       "@type": "@id"
     },
     "description": {
-      "@id": "http://w3id.org/ocds/ns##budgetDescription",
+      "@id": "http://purl.org/onto-ocds/ocds#budgetDescription",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     }
   }

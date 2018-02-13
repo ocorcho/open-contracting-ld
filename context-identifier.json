@@ -2,25 +2,25 @@
   "@context": {   
 
   	   "Identifier" : {
-      "@id" : "http://w3id.org/ocds/ns##Identifier"
+      "@id" : "http://purl.org/onto-ocds/ocds#Identifier"
     },
 
      "scheme" : {
-      "@id" : "http://w3id.org/ocds/ns##identifierScheme",
+      "@id" : "http://purl.org/onto-ocds/ocds#identifierScheme",
       "@type" : "@id"
     },
      "id" : {
-      "@id" : "http://w3id.org/ocds/ns##identifierId"
+      "@id" : "http://purl.org/onto-ocds/ocds#identifierId"
     },
 
     "legalName" : {
-      "@id" : "http://w3id.org/ocds/ns##legalName",
+      "@id" : "http://purl.org/onto-ocds/ocds#legalName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
 
 
     "uri" : {
-      "@id" : "http://w3id.org/ocds/ns##identifierUri",
+      "@id" : "http://purl.org/onto-ocds/ocds#identifierUri",
       "@type" : "@id"
     }   
 
