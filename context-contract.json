@@ -34,7 +34,7 @@
       "@type" : "@id"
     },
 
-        "contractValue" : {
+    "value" : {
       "@id" : "http://purl.org/onto-ocds/ocds#contractValue",
       "@type" : "@id"
     },
