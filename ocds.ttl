@@ -485,10 +485,17 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/onto-ocds/ocds#suppliers
 :suppliers rdf:type owl:ObjectProperty ;
-           rdfs:domain :Contract ;
+           rdfs:domain :Award ;
            rdfs:range :Organization ;
            rdfs:comment "The suppliers awarded this award. If different suppliers have been awarded different items of values, these should be split into separate award blocks."@en ;
            rdfs:label "Suppliers"@en .
+
+###  http://purl.org/onto-ocds/ocds#contractSuppliers
+:contractSuppliers rdf:type owl:ObjectProperty ;
+           rdfs:domain :Contract ;
+           rdfs:range :Organization ;
+           rdfs:comment "The suppliers awarded this contract. Is an implementacion of DNCP"@en ;
+           rdfs:label "Contract Suppliers"@en .
 
 
 ###  http://purl.org/onto-ocds/ocds#tag

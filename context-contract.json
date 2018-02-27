@@ -74,8 +74,10 @@
 
 
 
-
-
+"suppliers" : {
+      "@id" : "http://purl.org/onto-ocds/ocds#contractSuppliers",
+      "@type" : "@id"
+    },
    
 
      "dncpContractCode" : {
@@ -91,7 +93,7 @@
     },
    
 
-    "contractLots" : {
+    "lots" : {
       "@id" : "http://purl.org/onto-ocds/ocds#contractLots",
       "@type" : "@id"
     }
