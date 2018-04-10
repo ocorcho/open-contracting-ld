@@ -1709,6 +1709,13 @@ rdfs:Resource rdf:type owl:Class .
             rdfs:comment "The United Nations Standard Products and Services Code (UNSPSC) is a hierarchical convention that is used to classify all products and services. Machine readable meta-data for UNSPSC is not provided as open data: and so publishers should consider alternative classification shemes that do provide open data lookup tables wherever possible."@en ;
             rdfs:label "UNSPSC"@en .
 
+###  http://purl.org/onto-ocds/ocds#ics_CDNCP
+:ics_CDNCP rdf:type owl:NamedIndividual ,
+                     :ItemClassificationScheme ;
+            dcterms:title "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay"@es ;
+            rdfs:comment "Catálogo de productos, bienes y servicios de la Dirección Nacional de Contrataciones Públicas del Paraguay Nivel 5, basado en UNSPSC."@es ;
+            rdfs:label "CDNCP"@en .
+
 
 ###  http://purl.org/onto-ocds/ocds#initiationTypeTender
 :initiationTypeTender rdf:type owl:NamedIndividual ,

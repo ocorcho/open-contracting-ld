@@ -1,30 +1,24 @@
 {
   "@context": {
-      
-
-
-
-      "Contract" : {
+    "Contract" : {
       "@id" : "http://purl.org/onto-ocds/ocds#Contract"
     },
 
-
-
-  "id" : {
+    "id" : {
       "@id" : "http://purl.org/onto-ocds/ocds#contractId"
     },
 
-   "title" : {
+    "title" : {
       "@id" : "http://purl.org/onto-ocds/ocds#contractTitle",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
 
-      "description" : {
+    "description" : {
       "@id" : "http://purl.org/onto-ocds/ocds#contractDescription",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
 
-      "status" : {
+    "status" : {
       "@id" : "http://purl.org/onto-ocds/ocds#contractStatus",
       "@type" : "@id"
     },
@@ -39,28 +33,25 @@
       "@type" : "@id"
     },
 
-
     "items" : {
       "@id" : "http://purl.org/onto-ocds/ocds#contractItems",
       "@type" : "@id"
     },
 
-      "dateSigned" : {
+    "dateSigned" : {
       "@id" : "http://purl.org/onto-ocds/ocds#dateSigned",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
 
-       "documents" : {
+    "documents" : {
       "@id" : "http://purl.org/onto-ocds/ocds#contractDocuments",
       "@type" : "@id"
     },
 
-
-     "implementation" : {
+    "implementation" : {
       "@id" : "http://purl.org/onto-ocds/ocds#implementation",
       "@type" : "@id"
     },
-
 
     "relatedProcess":  {
       "@id" : "http://purl.org/onto-ocds/ocds#TODO",
@@ -72,20 +63,15 @@
       "@type" : "@id"
     },
 
-
-
-"suppliers" : {
+    "suppliers" : {
       "@id" : "http://purl.org/onto-ocds/ocds#contractSuppliers",
       "@type" : "@id"
-    },
-   
+    },   
 
-     "dncpContractCode" : {
+    "dncpContractCode" : {
       "@id" : "http://purl.org/onto-ocds/ocds#dncpContractCode",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-
- 
 
     "contractAmendment" : {
       "@id" : "http://purl.org/onto-ocds/ocds#contractAmendment",
